@@ -1,0 +1,21 @@
+node_modules/
+.expo/
+dist/
+web-build/
+
+# native
+ios/
+android/
+
+# misc
+*.orig.*
+*.log
+*.tsbuildinfo
+.DS_Store
+
+# env (only commit the example)
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo

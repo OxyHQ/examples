@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+.pnp
+.pnp.*
+
+# build
+dist
+dist-ssr
+build
+out
+
+# misc
+.DS_Store
+*.local
+
+# env files (only commit the example)
+.env*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# typescript
+*.tsbuildinfo
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+.idea

@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-sign-in-with-oxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Next.js 15 + App Router starter showing Sign in with Oxy via @oxyhq/auth.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@oxyhq/auth": "^2.0.4",
+    "@oxyhq/core": "^1.11.13",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

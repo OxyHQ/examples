@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Sign in with Oxy",
+    "slug": "expo-sign-in-with-oxy",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "oxyexample",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "so.oxy.examples.signin"
+    },
+    "android": {
+      "package": "so.oxy.examples.signin",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
