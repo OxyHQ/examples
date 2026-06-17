@@ -7,7 +7,7 @@ import { useAuth } from '@oxyhq/auth';
  * profile + sign-out button when signed in.
  *
  * `useAuth` returns the live auth state from `WebOxyProvider`. Default
- * `signIn()` picks the best available method (FedCM → popup → redirect)
+ * `signIn()` picks the best available method (FedCM → redirect)
  * based on browser support.
  */
 export function AuthPanel() {
