@@ -1,0 +1,20 @@
+=============================================================================
+ NOTICE
+ OxyHQ/examples
+ Copyright (c) 2026-present The Oxy Collective Inc
+=============================================================================
+
+This product is licensed under the Apache License, Version 2.0.
+See the LICENSE file.
+
+These starters exist to be copied. Apache-2.0 lets you copy them into your own
+project, commercial or not, keep your project under whatever licence you like,
+and never ask anyone's permission. Attribution back to Oxy is not required.
+
+-----------------------------------------------------------------------------
+ THIRD PARTY COMPONENTS
+-----------------------------------------------------------------------------
+
+This repository contains no third party source. Each starter's dependencies are
+resolved and installed by the package manager and remain governed by their own
+licenses.
