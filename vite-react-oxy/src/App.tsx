@@ -1,11 +1,13 @@
-import { useAuth } from '@oxyhq/auth';
+import { OxySignInButton, useAuth } from '@oxy.so/services';
+import { getNormalizedUserHandle } from '@oxy.so/core';
+import { OXY_REDIRECT_URI } from './oxy-config';
 
 /**
  * Smallest possible Oxy integration: one provider at the root, one hook
  * here, two buttons.
  */
 export function App() {
-  const { user, isAuthenticated, isLoading, error, signIn, signOut } =
+  const { user, isAuthenticated, isLoading, error, signOut } =
     useAuth();
 
   return (
@@ -13,7 +15,7 @@ export function App() {
       <header>
         <h1>Sign in with Oxy</h1>
         <p className="muted">
-          Vite + React + <code>@oxyhq/auth</code>.
+          Vite + React + <code>@oxy.so/services</code>.
         </p>
       </header>
 
@@ -23,7 +25,7 @@ export function App() {
         </Card>
       ) : isAuthenticated && user ? (
         <Card>
-          <h2>Signed in as @{user.username}</h2>
+          <h2>Signed in as @{getNormalizedUserHandle(user)}</h2>
           {user.email ? <p className="muted">{user.email}</p> : null}
           <button
             type="button"
@@ -42,15 +44,7 @@ export function App() {
             Click below to authenticate via Oxy Accounts.
           </p>
           {error ? <p className="error">{error}</p> : null}
-          <button
-            type="button"
-            className="primary"
-            onClick={() => {
-              void signIn();
-            }}
-          >
-            Sign in with Oxy
-          </button>
+          <OxySignInButton oauthRedirectUri={OXY_REDIRECT_URI} />
         </Card>
       )}
     </main>

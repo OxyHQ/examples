@@ -1,11 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { WebOxyProvider } from '@oxyhq/auth';
+import { BloomProvider } from '@oxy.so/bloom/provider';
+import { OxyProvider } from '@oxy.so/services';
+import { OXY_API_URL, OXY_CLIENT_ID } from './oxy-config';
 import { App } from './App.tsx';
 import './styles.css';
-
-const OXY_API_URL = import.meta.env.VITE_OXY_API_URL ?? 'https://api.oxy.so';
-const OXY_AUTH_WEB_URL = import.meta.env.VITE_OXY_AUTH_WEB_URL;
 
 const container = document.getElementById('root');
 if (!container) {
@@ -14,8 +13,10 @@ if (!container) {
 
 createRoot(container).render(
   <StrictMode>
-    <WebOxyProvider baseURL={OXY_API_URL} authWebUrl={OXY_AUTH_WEB_URL}>
+    <BloomProvider>
+    <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
       <App />
-    </WebOxyProvider>
+    </OxyProvider>
+    </BloomProvider>
   </StrictMode>,
 );

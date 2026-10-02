@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { useAuth } from '@oxyhq/auth';
+import { useAuth } from '@oxy.so/services';
 
 /**
  * A client-side protected route.

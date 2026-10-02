@@ -1,17 +1,12 @@
 'use client';
 
-import { useAuth } from '@oxyhq/auth';
+import { OxySignInButton, useAuth } from '@oxy.so/services';
+import { getNormalizedUserHandle } from '@oxy.so/core';
+import { OXY_REDIRECT_URI } from '@/lib/oxy-config';
 
-/**
- * Renders the Oxy sign-in button when signed out, or the current user's
- * profile + sign-out button when signed in.
- *
- * `useAuth` returns the live auth state from `WebOxyProvider`. Default
- * `signIn()` picks the best available method (FedCM → redirect)
- * based on browser support.
- */
+/** External OAuth/PKCE sign-in starts only from the SDK button's user gesture. */
 export function AuthPanel() {
-  const { user, isAuthenticated, isLoading, error, signIn, signOut } =
+  const { user, isAuthenticated, isLoading, error, signOut } =
     useAuth();
 
   if (isLoading) {
@@ -27,29 +22,16 @@ export function AuthPanel() {
       <div className="card">
         <h2>Sign in with Oxy</h2>
         <p className="muted">
-          You'll be redirected to Oxy Accounts to authenticate, then sent back
-          here.
+          Oxy asks for your consent in its authorization window. A blocked popup
+          uses the registered return URL instead.
         </p>
         {error ? <p className="error">{error}</p> : null}
-        <button
-          type="button"
-          className="primary"
-          onClick={() => {
-            void signIn();
-          }}
-        >
-          Sign in with Oxy
-        </button>
+        <OxySignInButton oauthRedirectUri={OXY_REDIRECT_URI} />
       </div>
     );
   }
 
-  const displayName =
-    user.name?.full ||
-    [user.name?.first, user.name?.last].filter(Boolean).join(' ').trim() ||
-    user.username ||
-    user.email ||
-    'Oxy user';
+  const displayName = user.name?.displayName || getNormalizedUserHandle(user);
 
   return (
     <div className="card">

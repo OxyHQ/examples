@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useAuth } from '@oxyhq/auth';
+import { useAuth } from '@oxy.so/services';
 
 /**
  * Only renders the "Open protected page" link when the user is signed in.

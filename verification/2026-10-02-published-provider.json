@@ -1,0 +1,351 @@
+{
+  "observed_at": "2026-10-02T18:09:27.918084+00:00",
+  "base": "03f9d52eb123ad929237c42745c6bc7d9ce357a4",
+  "toolchain": {
+    "bun": "1.4.2",
+    "node": "24.21.0",
+    "next": "15.5.18",
+    "vite": "7.3.3"
+  },
+  "published_packages": {
+    "services": {
+      "name": "@oxy.so/services",
+      "version": "11.0.0",
+      "dist": {
+        "shasum": "32b8d20a0fc0ca1e823e8b9ba8f2a3b7aae24eed",
+        "tarball": "https://registry.npmjs.org/@oxy.so/services/-/services-11.0.0.tgz",
+        "fileCount": 2388,
+        "integrity": "sha512-QvxHdm1BtgT/5W4GS44B6/JnOP+MqidjFv9K8Y7hpsJOmvw3pnL7Iq7CrlD+Gtgu1fVXaW+MlBUZ7D9u9y3Ujw==",
+        "signatures": [
+          {
+            "sig": "MEQCIFF6IKrXEuD2UxlP9lgdlSumvkoH/KG8LczTeF+WOG4OAiBZhfYUuSpUne9fFZnW2PfKfQyuDJevT0gysKUGhcZ1qw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDz9/Hl/HUHbC0IdcgjUOsxxx+tyGP71MBZfwGNqJtXvgIgTVtdIclSFiG0lhzlxy1RHsnboZQh2jD1jCAMOnCxlLs=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 11347657
+      },
+      "peerDependencies": {
+        "expo": ">=56.0.0",
+        "react": ">=18.0.0",
+        "zustand": "^5.0.0",
+        "expo-image": ">=2.0.0",
+        "nativewind": ">=5.0.0",
+        "@oxy.so/core": "^4.0.0",
+        "@types/react": "*",
+        "expo-haptics": ">=56.0.0",
+        "react-native": ">=0.85.0",
+        "@oxy.so/bloom": "^6.0.0",
+        "expo-clipboard": ">=56.0.0 <59.0.0",
+        "expo-constants": ">=56.0.0",
+        "expo-file-system": ">=56.0.0",
+        "expo-web-browser": ">=56.0.0",
+        "react-native-css": "^3.0.6",
+        "react-native-svg": ">=15.15.0",
+        "expo-image-picker": ">=56.0.0",
+        "expo-modules-core": "*",
+        "@expo/vector-icons": "^15.0.3",
+        "expo-notifications": ">=56.0.0",
+        "@types/react-native": "*",
+        "expo-document-picker": ">=56.0.0",
+        "expo-linear-gradient": ">=56.0.0",
+        "@tanstack/react-query": "^5.101",
+        "expo-image-manipulator": ">=56.0.0",
+        "react-native-qrcode-svg": "^6.3.0",
+        "react-native-reanimated": ">=4.3.0",
+        "react-native-gesture-handler": ">=2.31.1",
+        "react-native-safe-area-context": ">=5.7.0",
+        "@react-native-community/netinfo": ">=11.4.1",
+        "react-native-keyboard-controller": ">=1.21.0",
+        "@tanstack/react-query-persist-client": "^5.101",
+        "@tanstack/query-sync-storage-persister": "^5.101",
+        "@tanstack/query-async-storage-persister": "^5.101",
+        "@react-native-async-storage/async-storage": "^2.0.0"
+      },
+      "peerDependenciesMeta": {
+        "expo": {
+          "optional": true
+        },
+        "nativewind": {
+          "optional": true
+        },
+        "@types/react": {
+          "optional": true
+        },
+        "expo-haptics": {
+          "optional": true
+        },
+        "expo-clipboard": {
+          "optional": true
+        },
+        "expo-constants": {
+          "optional": true
+        },
+        "expo-web-browser": {
+          "optional": true
+        },
+        "expo-image-picker": {
+          "optional": true
+        },
+        "expo-modules-core": {
+          "optional": true
+        },
+        "expo-notifications": {
+          "optional": true
+        },
+        "@types/react-native": {
+          "optional": true
+        },
+        "expo-document-picker": {
+          "optional": true
+        },
+        "expo-linear-gradient": {
+          "optional": true
+        },
+        "expo-image-manipulator": {
+          "optional": true
+        },
+        "react-native-keyboard-controller": {
+          "optional": true
+        },
+        "@tanstack/query-sync-storage-persister": {
+          "optional": true
+        }
+      }
+    },
+    "core": {
+      "name": "@oxy.so/core",
+      "version": "4.1.0",
+      "dist": {
+        "shasum": "00cccc4c705acd56aafe5bcc7183e00e1005a4eb",
+        "tarball": "https://registry.npmjs.org/@oxy.so/core/-/core-4.1.0.tgz",
+        "fileCount": 569,
+        "integrity": "sha512-on4ir5Qx7KmJIZxYp8Y9GtJDdae4bAPARJIx8w+UXTs6Ygb+zHPESWzm9Mt4x+6Ey1EkDZq1s2OiXTInWs0Hhw==",
+        "signatures": [
+          {
+            "sig": "MEQCIGGYaWenu51GhyGtEtoOudh5TeaPoT9cXsiqiinDlMiXAiA6lDl4q6ZvhJsW7I0j5njQrrag1LsakT6xXdgG/JM4UQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQC+OD/+Uo/1zcqzCX3HaC3uBrZb27XnKBsRaAiYha2yvAIhAJBmNZH8UFkbepB3ZijU3hd4+rKICUQPeuWcHOvw6aCt",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 5920308
+      },
+      "peerDependencies": {
+        "express": "^4.0.0",
+        "expo-crypto": "*",
+        "expo-secure-store": "*",
+        "@react-native-async-storage/async-storage": "*"
+      },
+      "peerDependenciesMeta": {
+        "express": {
+          "optional": true
+        },
+        "expo-crypto": {
+          "optional": true
+        },
+        "expo-secure-store": {
+          "optional": true
+        },
+        "@react-native-async-storage/async-storage": {
+          "optional": true
+        }
+      }
+    },
+    "contracts": {
+      "name": "@oxy.so/contracts",
+      "version": "4.8.0",
+      "dist": {
+        "shasum": "e37d3b5dbb40e8352b073f0c38877ece58a2d6c7",
+        "tarball": "https://registry.npmjs.org/@oxy.so/contracts/-/contracts-4.8.0.tgz",
+        "fileCount": 180,
+        "integrity": "sha512-6A9jTeMFrqJtXlw0HThZfRcSGwWGCMxF8pGlmL1iFxa+NShDnthSv/l7W93gpVMwZnaKQf/kDPrYmUueax4Ujw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDSa/wtlBgmd3uADZshHDmWifjRB4ay8EbitRJREx1fHwIhAIBgPJauP8XpRCQDSFfSe3BtY/qiAj01uQB08JHinHKq",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCim9y9cCToufsBjtTGXGMHMWudhDhpqTrLDFHWqj8bTwIhAKYv44y/dQHUNZSln26DmSBsnHRwxRo5QEbsHhgHwrno",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 3502744
+      }
+    },
+    "bloom": {
+      "name": "@oxy.so/bloom",
+      "version": "6.4.0",
+      "dist": {
+        "shasum": "7a275987481f0bb4997d3dc4f9e1d702f5677342",
+        "tarball": "https://registry.npmjs.org/@oxy.so/bloom/-/bloom-6.4.0.tgz",
+        "fileCount": 20926,
+        "integrity": "sha512-tZCo2B45EFRWseIkXBQ/KZxNlg2crkyQTdjv6xLLTgTHZboM2ak7EFSKPSMXIga2ycStMtBFx45fkvmABQKeGA==",
+        "signatures": [
+          {
+            "sig": "MEQCIH/AVBoTbW0RUr8HI4INUjldB8lQI1xFn687yZZ68/w7AiBDtdNDmHeEOfFNu4AZPpQTBYuxf89YFofDFsm7d38Egw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCo7sRtOMzjWemvbKF+b3Tjsyq/mRwXjkcBAhNGitDNWwIgZlgudPqZR6/UBDaERu6imqmOnkN4Tp6basSQVXhj0lg=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 68807210
+      },
+      "peerDependencies": {
+        "expo": "*",
+        "react": ">=18.0.0",
+        "expo-blur": "*",
+        "expo-font": "*",
+        "react-dom": ">=18.0.0",
+        "expo-image": "*",
+        "expo-video": "*",
+        "nativewind": ">=5.0.0",
+        "expo-router": ">=3.0.0",
+        "expo-haptics": "*",
+        "expo-symbols": ">=0.4.5",
+        "react-native": ">=0.73.0",
+        "react-native-svg": ">=13.0.0",
+        "expo-glass-effect": ">=0.1.9",
+        "lottie-react-native": ">=7.0.0",
+        "react-native-screens": ">=3.16.0",
+        "react-native-reanimated": ">=3.13.0",
+        "@lottiefiles/dotlottie-react": ">=0.13.0",
+        "react-native-gesture-handler": ">=2.16.1",
+        "react-native-safe-area-context": ">=5.0.0",
+        "@react-native-community/netinfo": ">=11.1.0",
+        "react-native-keyboard-controller": ">=1.11.4"
+      },
+      "peerDependenciesMeta": {
+        "expo": {
+          "optional": true
+        },
+        "expo-font": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        },
+        "expo-video": {
+          "optional": true
+        },
+        "nativewind": {
+          "optional": true
+        },
+        "expo-router": {
+          "optional": true
+        },
+        "expo-haptics": {
+          "optional": true
+        },
+        "lottie-react-native": {
+          "optional": true
+        },
+        "@lottiefiles/dotlottie-react": {
+          "optional": true
+        },
+        "@react-native-community/netinfo": {
+          "optional": true
+        },
+        "react-native-keyboard-controller": {
+          "optional": true
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "port": 17854,
+      "scenario": "device-less-oauth-and-logout",
+      "result": "RED: published sign-out does not revoke or clear isolated session",
+      "authorize": 1,
+      "exchanges": 1
+    },
+    {
+      "port": 17854,
+      "scenario": "state-mismatch",
+      "result": "PASS",
+      "authorize": 1,
+      "exchanges": 0
+    },
+    {
+      "port": 17853,
+      "scenario": "device-less-oauth-and-logout",
+      "result": "RED: published sign-out does not revoke or clear isolated session",
+      "authorize": 1,
+      "exchanges": 1
+    },
+    {
+      "port": 17853,
+      "scenario": "state-mismatch",
+      "result": "PASS",
+      "authorize": 1,
+      "exchanges": 0
+    },
+    {
+      "port": 17856,
+      "scenario": "device-less-oauth-and-logout",
+      "result": "RED: published sign-out does not revoke or clear isolated session",
+      "authorize": 1,
+      "exchanges": 1
+    },
+    {
+      "port": 17856,
+      "scenario": "state-mismatch",
+      "result": "PASS",
+      "authorize": 1,
+      "exchanges": 0
+    }
+  ],
+  "records": [
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-next-bloom-build.log",
+      "sha256": "fccfe22918619e6cc3b7215e3f9311cf5c7b481bfbd9ec23d38b444f74ed9a35"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-vite-mixedmodules-build.log",
+      "sha256": "293ab0c7911b3558cdeaf58eae4908ee4bc34f159e62efe7b4e6e5cd688f0ab3"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-next-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-vite-typecheck.log",
+      "sha256": "98ae1f57bd1b2899b7205cb5ce3a75a863489600a6539d608774dd930a859535"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-next-frozen.log",
+      "sha256": "1ab71edb44429d7bce4f53c76d1857c5d7c49d5ec9e1e056c9f33045d54136bf"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-vite-frozen.log",
+      "sha256": "95c9621be8bb15f752001be6f45f2f1bb8e12edd06be76e133c997edb1b6f02c"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-published-oauth-red-final.log",
+      "sha256": "846ad492c3512ab2cb929a752154f50581fe159115761dbb8ab805656f27bb93"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-vite-dev-oauth-red.log",
+      "sha256": "c12f21bacda06ea5ee5991019b032a0243be93d4e26d37d723cd33dce38fb87b"
+    },
+    {
+      "path": "/home/nate/Oxy/.agent-evidence/coverage-1519-20261002/examples-oauth-browser.mjs",
+      "sha256": "3f86775f112ffc7e7fe2681e34b14e951bf64241d8f025dfc995670d93c9fb9a"
+    }
+  ],
+  "limitations": [
+    "SDK logout defect remains; no SDK package patched or tarball adopted",
+    "Only intercepted synthetic third-party OAuth, all non-local transport intercepted/aborted; no registered credentials, real provider, deployment, live SSO or Android validation",
+    "Published SDK ephemeral isolated session does not persist restore credentials; no app-local restore added",
+    "Expo migration waits for shared native finalizer and published release",
+    "First mounting/compilation passes were followed by browser failures (missing Bloom provider, Expo initialization, native JSX/CommonJS web helpers); final production and dev probes retained"
+  ]
+}
