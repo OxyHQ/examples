@@ -1,81 +1,27 @@
-# Vite + React + Oxy — Minimal Starter
+# Sign in with Oxy — Vite 7 + React 19
 
-The smallest possible **Sign in with Oxy** integration. Plain Vite, React 19,
-TypeScript, hand-rolled CSS — nothing else. Useful as a reference if you're
-integrating Oxy into a custom stack.
+A standalone external application using the published `@oxy.so/services` SDK: one `OxyProvider`, its `OxySignInButton`, and `useAuth()` for the signed-in state and sign-out action. `BloomProvider` supplies the SDK UI theme.
 
-## What this shows
+## Configure and run
 
-- A single `WebOxyProvider` at the root of the app.
-- A single `useAuth()` hook reading `user`, `isAuthenticated`, `signIn`,
-  `signOut`.
-- Two buttons: sign in / sign out.
-
-That's it. No router, no state management library, no UI kit. Total app code:
-roughly 90 lines across `src/`.
-
-## Stack
-
-| Layer    | Choice                              |
-| -------- | ----------------------------------- |
-| Bundler  | Vite 7                              |
-| Runtime  | React 19                            |
-| Language | TypeScript (strict)                 |
-| Auth     | `@oxyhq/auth` + `@oxyhq/core`       |
-| Styling  | One `styles.css` file               |
-
-## Install
-
-```bash
-bun install
-```
-
-## Configure
+Copy `.env.example` to `.env.local` and fill in the registered public client ID. The template documents every setting. The application must be registered as `third_party`, with its exact callback URI in `redirectUris`; an Oxy-branded example receives no internal-app exemption. No client secret belongs in browser code. Missing client ID or return URI fails closed.
 
 ```bash
 cp .env.example .env.local
-```
-
-Edit `.env.local`:
-
-```env
-VITE_OXY_API_URL=https://api.oxy.so
-# VITE_OXY_AUTH_WEB_URL=https://auth.oxy.so  # only if self-hosting
-```
-
-## Run
-
-```bash
+bun install --frozen-lockfile --minimum-release-age=0
 bun run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173).
-
-## Build
-
-```bash
 bun run build
-bun run preview   # serves the built bundle on :4173 for a quick smoke test
+bun run typecheck
 ```
 
-## File map
+The SDK opens the consent-bearing OAuth window from the button press and owns PKCE, `state` validation, token exchange, and the return route. A blocked popup uses the registered URI. Keep the provider mounted there. The app has no callback handler, token storage, silent restore, or sign-in screen. There are no cookies, FedCM, hidden iframes, or authorization requests on page load.
 
-```
-src/
-  main.tsx       ← <WebOxyProvider> + ReactDOM.createRoot
-  App.tsx        ← const { user, signIn, signOut } = useAuth()
-  styles.css     ← Plain CSS, no Tailwind / CSS-in-JS
-```
+Configuration is public and baked into the browser build. Register the deployed callback URI before building for that origin. A client-side protected view only controls presentation; a backend must use `OxyServer` from `@oxy.so/core/server` and its middleware to authorize requests.
 
-## Deploy
+## Published SDK verification limit
 
-The built `dist/` folder is a static site — drop it on Netlify, Vercel,
-Cloudflare Pages, S3 + CloudFront, your own nginx, anywhere.
+The pinned SDK supports device-less OAuth exchange and authenticated display. Local browser verification also reproduced a published SDK lifecycle defect: sign-out requires shared device membership, which an isolated third-party session lacks. This starter does not fabricate device credentials or add local token plumbing. Adoption remains pending the upstream lifecycle fix and a verified published release; see the repository verification record.
 
-Just remember to set `VITE_OXY_API_URL` at build time in your deploy target
-(env vars are baked into the bundle by Vite — they're not read at runtime).
+Native third-party completion has a separate shared-helper gap; the Expo starter remains pending that release.
 
-## Learn more
-
-- `@oxyhq/auth` source: https://github.com/oxyhq/sdk/tree/main/packages/auth-sdk
-- Oxy platform docs: https://oxy.so
+[Oxy integration contracts](https://github.com/OxyHQ/oxy/blob/main/docs/auth/integration-guide.md)
