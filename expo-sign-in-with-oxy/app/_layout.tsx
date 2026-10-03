@@ -17,10 +17,10 @@ export default function RootLayout() {
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <GestureHandlerRootView style={{ flex: 1 }}>
         <BloomProvider>
-        <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
-          <Stack screenOptions={{ headerShown: false }} />
-          <StatusBar style="auto" />
-        </OxyProvider>
+          <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
+            <Stack screenOptions={{ headerShown: false }} />
+            <StatusBar style="auto" />
+          </OxyProvider>
         </BloomProvider>
       </GestureHandlerRootView>
     </SafeAreaProvider>

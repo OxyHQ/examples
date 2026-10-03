@@ -16,7 +16,7 @@ import { OXY_REDIRECT_URI } from '../oxy-config';
 export default function HomeScreen() {
   const { isAuthenticated, isLoading, user, signOut, error } = useAuth();
   const displayName = user
-    ? user.name?.displayName || getNormalizedUserHandle(user)
+    ? user.name?.displayName ?? getNormalizedUserHandle(user)
     : null;
 
   const handleLogout = useCallback(async () => {
@@ -74,13 +74,13 @@ export default function HomeScreen() {
                 Tap below to open Oxy authorization for this registered app.
                 The SDK completes OAuth and keeps the session in memory.
               </Text>
-              {error ? <Text style={styles.muted}>{error}</Text> : null}
               <OxySignInButton
                 oauthRedirectUri={OXY_REDIRECT_URI}
                 nativeOAuthCompletion="sdk"
               />
             </>
           )}
+          {error ? <Text accessibilityRole="alert" style={styles.muted}>{error}</Text> : null}
         </View>
       </ScrollView>
     </SafeAreaView>
