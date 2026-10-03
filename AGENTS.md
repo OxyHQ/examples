@@ -8,7 +8,7 @@ Runnable starter projects demonstrating Oxy identity platform integration. Each 
 |-----------|-------|----------|
 | `nextjs-sign-in-with-oxy/` | Next.js 15 + App Router | `@oxy.so/services` (`OxyProvider`) |
 | `vite-react-oxy/` | Vite 7 + React 19 | `@oxy.so/services` (`OxyProvider`) |
-| `expo-sign-in-with-oxy/` | Expo SDK 56 + expo-router | Legacy `@oxyhq/services` (migration pending shared native OAuth completion) |
+| `expo-sign-in-with-oxy/` | Expo SDK 56 + expo-router | `@oxy.so/services` (shared native OAuth completion; final registry install pending) |
 
 ## Commands (per example — run inside the example directory)
 

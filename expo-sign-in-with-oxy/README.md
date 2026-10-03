@@ -1,136 +1,54 @@
-# Sign in with Oxy — Expo Starter
+# Sign in with Oxy — Expo starter
 
-An Expo SDK 56 starter (TypeScript + Expo Router) that demonstrates
-[`OxySignInButton`](https://github.com/oxyhq/sdk/tree/main/packages/services)
-from `@oxyhq/services`.
+This Expo 56 starter uses one `OxyProvider` from `@oxy.so/services`, the shared
+`OxySignInButton` and `useAuth`. Bloom provides the theme. Native OAuth completion
+is handled by the SDK (`nativeOAuthCompletion="sdk"`); the app does not exchange
+codes, store bearer tokens, or implement a callback handler.
 
-The same code runs on **iOS**, **Android**, and **Web** — Oxy's RN SDK
-ships native flows for mobile (bottom sheet + native gestures) and a
-full-screen modal on web.
+## Configure and run
 
-## What this shows
+Register a public client in Oxy Console with the exact redirect URI for your
+platform. Copy `.env.example` to `.env` and set `EXPO_PUBLIC_OXY_CLIENT_ID`,
+`EXPO_PUBLIC_OXY_REDIRECT_URI`, and `EXPO_PUBLIC_OXY_API_URL`. These are public
+configuration values; never put a client secret in an Expo environment variable.
+The starter refuses to mount without its registered client and redirect.
 
-- Wrapping a tree in `<OxyProvider>` (RN context + bottom-sheet router +
-  React Query + Bloom theme).
-- Dropping `<OxySignInButton />` to launch the sign-in flow.
-- Reading the live auth state via `useOxy()` (`user`, `isAuthenticated`,
-  `logout`).
+For a native development build, register `oxyexample://oauth/callback`, matching
+the `oxyexample` scheme in `app.json`. Web needs its own exact registered HTTP(S)
+redirect URI. The application registration determines the sign-in lane; the
+starter does not grant itself first-party trust.
 
-## Stack
-
-| Layer    | Choice                                            |
-| -------- | ------------------------------------------------- |
-| Framework | Expo SDK 56 + Expo Router                        |
-| Language  | TypeScript (strict)                              |
-| Auth      | `@oxyhq/services` + `@oxyhq/core` + `@oxyhq/bloom` |
-| UI        | React Native primitives + Bloom theme            |
-
-> The Bloom version is pinned to `0.4.0` to match `@oxyhq/services@6.9.46`'s
-> expected subpath exports. Once `@oxyhq/services@6.10.0` ships you can
-> bump to `@oxyhq/bloom@0.5.0`.
-
-## Install
-
-```bash
-bun install
-```
-
-> The first install pulls down RN, Reanimated 4, and Gesture Handler — give
-> it a minute.
-
-## Configure
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env`:
-
-```env
-EXPO_PUBLIC_OXY_API_URL=https://api.oxy.so
-```
-
-> Expo only exposes env vars whose name starts with `EXPO_PUBLIC_` to the
-> client bundle. Anything else stays server-only.
-
-## Run
-
-### iOS simulator
-
-```bash
-bun run ios
-```
-
-### Android emulator
-
-```bash
-bun run android
-```
-
-### Web
-
-```bash
+```sh
+bun install --frozen-lockfile --minimum-release-age=0
+bunx expo run:android  # or bunx expo run:ios
 bun run web
 ```
 
-### On a real device
+Use a development build for native testing. Expo Go cannot supply the SDK's
+custom native modules. Native-module dependencies are declared directly; aligned
+versions are listed in `expo.install.exclude` where required. Changing them
+requires rebuilding the native app, not only reloading JavaScript.
 
-```bash
-bun run start
+A third-party client opens the explicit OAuth flow, then keeps the resulting
+app session in memory. Process restart requires signing in again. Sign-out is
+awaited, and failure remains visible. There is no silent top-level redirect,
+app-local restore or shared-device credential plumbing.
+
+## Checks
+
+```sh
+bunx --no-install tsc --noEmit
+bun run build
 ```
 
-Scan the QR with the **Expo Go** app on iOS or Android — it streams the
-JS bundle from your laptop. Make sure your phone and laptop are on the same
-Wi-Fi network.
+The TypeScript config checks published declaration files (`customConditions: []`)
+rather than applying the starter's compiler flags to dependency source. Metro
+still selects the native runtime exports on native platforms.
 
-### Deep-link redirect URI
+`app/_layout.tsx` mounts the providers, `oxy-config.ts` validates public config,
+and `app/index.tsx` renders shared sign-in/auth state. The display name falls back
+to the canonical normalized handle. The web build does not establish Android/iOS
+runtime acceptance; test the registered callback in the native development build.
 
-The sign-in flow opens Oxy Accounts in an in-app browser and redirects back
-via a deep link. We compute it at runtime in `app/_layout.tsx`:
-
-```ts
-const AUTH_REDIRECT_URI = Linking.createURL('/');
-```
-
-In Expo Go: `exp://<lan-ip>:8081/--/`.
-In a standalone build: `oxyexample://` (matches the `scheme` in `app.json`).
-
-If you change the scheme, also update it in your Oxy Developer App's
-allowed redirect URIs.
-
-## Native build (development build / EAS)
-
-Expo Go ships a fixed set of native modules. This starter only uses modules
-included with Expo Go (Reanimated, Gesture Handler, SecureStore via
-@oxyhq/services, etc.) — it runs in Expo Go out of the box.
-
-If you add a custom native module later, run a prebuild:
-
-```bash
-bunx expo prebuild
-bun run ios   # or android
-```
-
-For TestFlight / Play Store builds use [EAS](https://expo.dev/eas):
-
-```bash
-bunx eas build --profile preview --platform ios
-```
-
-## File map
-
-```
-app/
-  _layout.tsx     ← <SafeAreaProvider> → <GestureHandlerRootView> → <OxyProvider>
-  index.tsx       ← <OxySignInButton /> + useOxy()
-app.json          ← Expo config, scheme = "oxyexample"
-babel.config.js   ← babel-preset-expo + reanimated plugin
-metro.config.js   ← Registers .woff2/.woff as static assets (used by Bloom)
-```
-
-## Learn more
-
-- `@oxyhq/services` source: https://github.com/oxyhq/sdk/tree/main/packages/services
-- `OxySignInButton` source:
-  https://github.com/oxyhq/sdk/blob/main/packages/services/src/ui/components/OxySignInButton.tsx
-- Oxy platform docs: https://oxy.so
+Current compatibility evidence and the distinction between candidate and final
+registry dependencies are recorded under `../docs/audits/`.

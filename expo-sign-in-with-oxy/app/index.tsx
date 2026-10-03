@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback } from 'react';
 import {
   Alert,
   Pressable,
@@ -9,32 +9,27 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { OxySignInButton, useOxy } from '@oxyhq/services';
+import { OxySignInButton, useAuth } from '@oxy.so/services';
+import { getNormalizedUserHandle } from '@oxy.so/core';
+import { OXY_REDIRECT_URI } from '../oxy-config';
 
 export default function HomeScreen() {
-  const { isAuthenticated, user, logout } = useOxy();
-
-  const displayName = useMemo(() => {
-    if (!user) return null;
-    const full = user.name?.full;
-    const firstLast = [user.name?.first, user.name?.last]
-      .filter(Boolean)
-      .join(' ')
-      .trim();
-    return full || firstLast || user.username || user.email || 'Oxy user';
-  }, [user]);
+  const { isAuthenticated, isLoading, user, signOut, error } = useAuth();
+  const displayName = user
+    ? user.name?.displayName || getNormalizedUserHandle(user)
+    : null;
 
   const handleLogout = useCallback(async () => {
     try {
-      await logout();
+      await signOut();
     } catch (error) {
-      console.error('Failed to sign out', error);
+      // The hook exposes the failure while preserving the current session.
       Alert.alert(
         'Sign out failed',
-        'Something went wrong. Check the console for details.',
+        'Something went wrong. Please try again.',
       );
     }
-  }, [logout]);
+  }, [signOut]);
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
@@ -45,12 +40,14 @@ export default function HomeScreen() {
         <View style={styles.header}>
           <Text style={styles.title}>Sign in with Oxy</Text>
           <Text style={styles.subtitle}>
-            Expo + Expo Router + @oxyhq/services.
+            Expo + Expo Router + @oxy.so/services.
           </Text>
         </View>
 
         <View style={styles.card}>
-          {isAuthenticated && user ? (
+          {isLoading ? (
+            <Text style={styles.muted}>Checking your session…</Text>
+          ) : isAuthenticated && user ? (
             <>
               <Text style={styles.cardTitle}>You're signed in</Text>
               <Text style={styles.muted}>Welcome back,</Text>
@@ -74,11 +71,14 @@ export default function HomeScreen() {
             <>
               <Text style={styles.cardTitle}>You're signed out</Text>
               <Text style={styles.muted}>
-                Tap the button below to open the Oxy sign-in flow. It runs as
-                a native bottom sheet on iOS / Android and as a full-screen
-                modal on web.
+                Tap below to open Oxy authorization for this registered app.
+                The SDK completes OAuth and keeps the session in memory.
               </Text>
-              <OxySignInButton variant="contained" />
+              {error ? <Text style={styles.muted}>{error}</Text> : null}
+              <OxySignInButton
+                oauthRedirectUri={OXY_REDIRECT_URI}
+                nativeOAuthCompletion="sdk"
+              />
             </>
           )}
         </View>
