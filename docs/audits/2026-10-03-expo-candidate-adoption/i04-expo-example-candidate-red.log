@@ -1,0 +1,3 @@
+$ tsc --noEmit
+app/_layout.tsx(12,29): error TS2307: Cannot find module '@oxyhq/services' or its corresponding type declarations.
+app/index.tsx(12,41): error TS2307: Cannot find module '@oxyhq/services' or its corresponding type declarations.

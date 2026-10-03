@@ -1,0 +1,11 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [1]
+Saved lockfile
+
++ @oxy.so/contracts@/home/nate/Oxy/.agent-evidence/i04-consumer-final-candidate-packs/oxy.so-contracts-4.9.0.tgz
++ @oxy.so/core@/home/nate/Oxy/.agent-evidence/i04-consumer-final-candidate-packs/oxy.so-core-4.2.0.tgz
++ @oxy.so/services@/home/nate/Oxy/.agent-evidence/i04-consumer-final-candidate-packs/oxy.so-services-11.1.0.tgz
++ expo-secure-store@56.0.4 (v57.0.4 available)
+
+5 packages installed [367.00ms]
