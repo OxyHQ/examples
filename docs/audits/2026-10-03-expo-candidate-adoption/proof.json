@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "f82dddee7179602988eff7b2cc663e1bca25ca80",
+  "sourceCommit": "49d87b65231111901f69607ee8e5956dbde99452",
   "base": "7a5bba6f88ca7bd9ce95c1dafaa9fafb58049633",
   "sdkCandidate": "dca175d22497b0c51e124f4a517b1b7f055f7908",
   "sources": [
@@ -20,13 +20,13 @@
     },
     {
       "path": "expo-sign-in-with-oxy/app/_layout.tsx",
-      "sha256": "0cd48984bbfb15ee78be938d861b0069d2813f107149f227990b0cf28e652ed1",
-      "bytes": 910
+      "sha256": "7dba27ffb68253c8ebb5c8dd66d978cd79679eb3f5b664bf8c6906473b021753",
+      "bytes": 918
     },
     {
       "path": "expo-sign-in-with-oxy/app/index.tsx",
-      "sha256": "9d10396d0221699f4b8e3f81b4dd88ade26f9a1235281da5d64412a8ac3dc3c4",
-      "bytes": 3931
+      "sha256": "aa783b67604a18efee394832012df6eb44c8d5295273a252ea555d561d87e0c7",
+      "bytes": 3953
     },
     {
       "path": "expo-sign-in-with-oxy/metro.config.js",
@@ -101,6 +101,16 @@
       "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-types-final.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-error-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-error-build.log",
+      "sha256": "c19e61db0b04d88694999902e569ea4d658b53513f06d7a3a5caa8d47e85d3d0",
+      "bytes": 7062
     }
   ],
   "results": {
@@ -118,5 +128,6 @@
     "Native SDK modules require development build; no Android/iOS execution from this starter.",
     "Build-only public config is not a registered client and no auth flow was executed.",
     "Production manifests/registry lock remain pending; exact candidate inputs are preserved separately."
-  ]
+  ],
+  "initialSourceCommit": "f82dddee7179602988eff7b2cc663e1bca25ca80"
 }
