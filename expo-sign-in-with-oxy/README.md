@@ -50,5 +50,7 @@ and `app/index.tsx` renders shared sign-in/auth state. The display name falls ba
 to the canonical normalized handle. The web build does not establish Android/iOS
 runtime acceptance; test the registered callback in the native development build.
 
-Current compatibility evidence and the distinction between candidate and final
-registry dependencies are recorded under `../docs/audits/`.
+The final published versions and frozen install, types and web-export results
+are recorded in [the registry proof](../docs/audits/2026-10-04-final-registry/README.md).
+Earlier candidate evidence is preserved separately; this export does not claim a
+new native device test of this starter.

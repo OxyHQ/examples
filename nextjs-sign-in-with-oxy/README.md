@@ -18,10 +18,10 @@ The SDK opens the consent-bearing OAuth window from the button press and owns PK
 
 Configuration is public and baked into the browser build. Register the deployed callback URI before building for that origin. A client-side protected view only controls presentation; a backend must use `OxyServer` from `@oxy.so/core/server` and its middleware to authorize requests.
 
-## Published SDK verification limit
+## Verification
 
-The pinned SDK supports device-less OAuth exchange and authenticated display. Local browser verification also reproduced a published SDK lifecycle defect: sign-out requires shared device membership, which an isolated third-party session lacks. This starter does not fabricate device credentials or add local token plumbing. Adoption remains pending the upstream lifecycle fix and a verified published release; see the repository verification record.
+The current pins are services 11.1.0, core 4.2.0, contracts 4.9.0 and Bloom 6.2.1 from the public registry. Frozen installation, TypeScript and production build pass. Installed files match the accepted published archives. These starter checks establish packaging and source compatibility; they do not replace a runtime test with your registered client.
 
-Native third-party completion has a separate shared-helper gap; the Expo starter remains pending that release.
+The old release's logout failure remains in the historical `verification/` record. Final shared SDK web/native acceptance is linked separately in the [registry proof](../docs/audits/2026-10-04-final-registry/README.md); no local auth workaround was added to this starter.
 
 [Oxy integration contracts](https://github.com/OxyHQ/oxy/blob/main/docs/auth/integration-guide.md)

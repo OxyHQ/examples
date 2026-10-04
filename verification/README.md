@@ -1,4 +1,6 @@
-# Published provider migration: local verification
+# Historical provider migration verification (superseded package pins)
+
+This is the preserved pre-release experiment, including its expected logout failure. Current published pins and checks are in [the final registry proof](../docs/audits/2026-10-04-final-registry/README.md).
 
 The Next.js and Vite starters consume registry-published services 11.0.0, core 4.1.0, contracts 4.8.0 and peer-compatible Bloom 6.4.0. Each starter passes frozen Bun install, its typecheck and production build. Vite development also mounts and runs the OAuth fixture. The record pins registry metadata, exact base, toolchain and evidence hashes.
 
