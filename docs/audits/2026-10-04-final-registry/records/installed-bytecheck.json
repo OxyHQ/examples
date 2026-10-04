@@ -1,0 +1,162 @@
+{
+  "kind": "examples-public-registry-installed-bytecheck",
+  "publicationReceipt": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/published-final-sdk-85dad/complete.json",
+  "publicationReceiptSha256": "3421a5be70eca17c18f8d3e833a603b83aeaec9690666b92bf93a5f56ff864a9",
+  "archives": [
+    {
+      "name": "@oxy.so/contracts",
+      "version": "4.9.0",
+      "archive": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/published-final-sdk-85dad/contracts.tgz",
+      "archiveSha256": "d495f3b1aabbfea8da57107e4f4bbee7c8d2e9e34f9e2345923e12a5c080fdaa"
+    },
+    {
+      "name": "@oxy.so/protocol",
+      "version": "1.2.2",
+      "archive": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/published-final-sdk-85dad/protocol.tgz",
+      "archiveSha256": "88498ab28c1aa373f6f725f1625662b47d61e50d8ae25a54c80bfb2ecb65b5db"
+    },
+    {
+      "name": "@oxy.so/core",
+      "version": "4.2.0",
+      "archive": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/published-final-sdk-85dad/core.tgz",
+      "archiveSha256": "20fbd2e6fadd5d1e0a6ea9b6ad0ed9f65e77d5289600f6085ebfc16c224d5795"
+    },
+    {
+      "name": "@oxy.so/services",
+      "version": "11.1.0",
+      "archive": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/published-final-sdk-85dad/services.tgz",
+      "archiveSha256": "20edf86b755293700e81b2dbe680ea2fa99e42d5a85fc089b53398f0eb05c99d"
+    },
+    {
+      "name": "@oxy.so/bloom",
+      "version": "6.2.1",
+      "archive": "/home/nate/Oxy/.agent-evidence/root-1519-20261003/bloom621-publication/oxy-so-bloom-6.2.1.tgz",
+      "archiveSha256": "edf4cfe3d8597e4bf86f997bceacf332f7fce4a8f92c541b3cd375decbce3a0a"
+    }
+  ],
+  "installed": [
+    {
+      "importer": "vite-react-oxy/package.json",
+      "name": "@oxy.so/contracts",
+      "version": "4.9.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/vite-react-oxy/node_modules/@oxy.so/contracts",
+      "files": 198,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "nextjs-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/contracts",
+      "version": "4.9.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/nextjs-sign-in-with-oxy/node_modules/@oxy.so/contracts",
+      "files": 198,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "expo-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/contracts",
+      "version": "4.9.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@oxy.so/contracts",
+      "files": 198,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "vite-react-oxy/package.json",
+      "name": "@oxy.so/protocol",
+      "version": "1.2.2",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/vite-react-oxy/node_modules/@oxy.so/protocol",
+      "files": 145,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "nextjs-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/protocol",
+      "version": "1.2.2",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/nextjs-sign-in-with-oxy/node_modules/@oxy.so/protocol",
+      "files": 145,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "expo-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/protocol",
+      "version": "1.2.2",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@oxy.so/protocol",
+      "files": 145,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "vite-react-oxy/package.json",
+      "name": "@oxy.so/core",
+      "version": "4.2.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/vite-react-oxy/node_modules/@oxy.so/core",
+      "files": 581,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "nextjs-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/core",
+      "version": "4.2.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/nextjs-sign-in-with-oxy/node_modules/@oxy.so/core",
+      "files": 581,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "expo-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/core",
+      "version": "4.2.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@oxy.so/core",
+      "files": 581,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "vite-react-oxy/package.json",
+      "name": "@oxy.so/services",
+      "version": "11.1.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/vite-react-oxy/node_modules/@oxy.so/services",
+      "files": 2418,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "nextjs-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/services",
+      "version": "11.1.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/nextjs-sign-in-with-oxy/node_modules/@oxy.so/services",
+      "files": 2418,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "expo-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/services",
+      "version": "11.1.0",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@oxy.so/services",
+      "files": 2418,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "vite-react-oxy/package.json",
+      "name": "@oxy.so/bloom",
+      "version": "6.2.1",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/vite-react-oxy/node_modules/@oxy.so/bloom",
+      "files": 20940,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "nextjs-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/bloom",
+      "version": "6.2.1",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/nextjs-sign-in-with-oxy/node_modules/@oxy.so/bloom",
+      "files": 20940,
+      "allFilesEqual": true
+    },
+    {
+      "importer": "expo-sign-in-with-oxy/package.json",
+      "name": "@oxy.so/bloom",
+      "version": "6.2.1",
+      "resolvedRoot": "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@oxy.so/bloom",
+      "files": 20940,
+      "allFilesEqual": true
+    }
+  ],
+  "totalComparedFiles": 72846,
+  "allFilesEqual": true,
+  "runtimeAuthenticationClaim": false
+}

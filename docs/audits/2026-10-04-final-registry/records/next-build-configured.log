@@ -1,0 +1,46 @@
+$ next build
+   ▲ Next.js 15.5.18
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings in 8.1s
+
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+./node_modules/@oxy.so/services/lib/module/ui/context/OxyContext.js
+./node_modules/@oxy.so/services/lib/module/index.js
+./components/oxy-provider.tsx
+
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+./node_modules/@oxy.so/services/lib/module/ui/context/OxyContext.js
+./node_modules/@oxy.so/services/lib/module/index.js
+./app/protected/page.tsx
+
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    1.14 kB         743 kB
+├ ○ /_not-found                             1 kB         104 kB
+└ ○ /protected                             768 B         742 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/1255-eae4096fb21f1304.js        46 kB
+  ├ chunks/4bd1b696-100b9d70ed4e49c1.js  54.2 kB
+  └ other shared chunks (total)          3.18 kB
+
+
+○  (Static)  prerendered as static content
+

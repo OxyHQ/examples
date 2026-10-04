@@ -1,0 +1,38 @@
+$ next build
+   ▲ Next.js 15.5.18
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings in 15.1s
+
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+./node_modules/@oxy.so/services/lib/module/ui/context/OxyContext.js
+./node_modules/@oxy.so/services/lib/module/index.js
+./components/oxy-provider.tsx
+
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@oxy.so/services/lib/module/ui/session/sharedDeviceCredentialStore.js
+./node_modules/@oxy.so/services/lib/module/ui/context/OxyContext.js
+./node_modules/@oxy.so/services/lib/module/index.js
+./components/oxy-provider.tsx
+
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+Error occurred prerendering page "/protected". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Configure NEXT_PUBLIC_OXY_CLIENT_ID and NEXT_PUBLIC_OXY_REDIRECT_URI from your registered third-party application.
+    at 79000 (.next/server/app/page.js:2:14254)
+    at c (.next/server/webpack-runtime.js:1:128)
+    at 33762 (.next/server/app/page.js:2:9699)
+    at Object.c [as require] (.next/server/webpack-runtime.js:1:128) {
+  digest: '2518832094'
+}
+Export encountered an error on /protected/page: /protected, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null
+error: script "build" exited with code 1

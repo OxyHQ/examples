@@ -1,0 +1,9 @@
+{
+  "kind": "web-export-only-existing-fixture-public-config",
+  "values": {
+    "EXPO_PUBLIC_OXY_API_URL": "http://127.0.0.1:17960",
+    "EXPO_PUBLIC_OXY_CLIENT_ID": "oxy_dk_669366a5641957de151c258f467b91906642fb0f2be06720",
+    "EXPO_PUBLIC_OXY_REDIRECT_URI": "http://127.0.0.1:17962/"
+  },
+  "runtimeAcceptance": false
+}
