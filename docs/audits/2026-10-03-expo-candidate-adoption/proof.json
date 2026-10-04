@@ -1,0 +1,133 @@
+{
+  "sourceCommit": "49d87b65231111901f69607ee8e5956dbde99452",
+  "base": "7a5bba6f88ca7bd9ce95c1dafaa9fafb58049633",
+  "sdkCandidate": "dca175d22497b0c51e124f4a517b1b7f055f7908",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "956d1ec60c5c12f36d8c3919dab850e1589bf9b56d306b98acf6b1841042116e",
+      "bytes": 1425
+    },
+    {
+      "path": "expo-sign-in-with-oxy/.env.example",
+      "sha256": "21ae912fc072905d1b4613d4a7ae443b57932cab262903f9ddc379384acbe07a",
+      "bytes": 362
+    },
+    {
+      "path": "expo-sign-in-with-oxy/README.md",
+      "sha256": "cb390bad71f7a122f821ed2b8d8a41fc8e7ee6103c0b0ddac5764e798400a7a6",
+      "bytes": 2513
+    },
+    {
+      "path": "expo-sign-in-with-oxy/app/_layout.tsx",
+      "sha256": "7dba27ffb68253c8ebb5c8dd66d978cd79679eb3f5b664bf8c6906473b021753",
+      "bytes": 918
+    },
+    {
+      "path": "expo-sign-in-with-oxy/app/index.tsx",
+      "sha256": "aa783b67604a18efee394832012df6eb44c8d5295273a252ea555d561d87e0c7",
+      "bytes": 3953
+    },
+    {
+      "path": "expo-sign-in-with-oxy/metro.config.js",
+      "sha256": "fdd13347ad0e3b4f6cb1eb29a735b0b2c9d0c49ef762dc2a9082dbe02f993d8d",
+      "bytes": 545
+    },
+    {
+      "path": "expo-sign-in-with-oxy/tsconfig.json",
+      "sha256": "d594b04ec7c1209258b56b22203e7d2a409ef0d50fe58bae893a776f914bf8b1",
+      "bytes": 367
+    },
+    {
+      "path": "expo-sign-in-with-oxy/oxy-config.ts",
+      "sha256": "32256e8c27f79b5713d65ee4ab8731db0e19db90f1282ee5d442115b10f0bf14",
+      "bytes": 483
+    }
+  ],
+  "candidateInstall": [
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/candidate-install/bun.lock",
+      "sha256": "555ee0a9ebe25aa9a87bc9120cce848834654fa56387ef28b5c8627c52d92331",
+      "bytes": 215343
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/candidate-install/package.json",
+      "sha256": "31a3b9c530c9d1a1678e1686e580ca5e7ce22f1ac1b4d66f45facebaff4ee05b",
+      "bytes": 3471
+    }
+  ],
+  "records": [
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-install.log",
+      "sha256": "ee07c49f316b8162ed293f2d11a96bef763c623a87c03345df449abacb22cfae",
+      "bytes": 2148
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-red.log",
+      "sha256": "538c7e1b9d3b89b01d5cf8bde698273cf45724ab83c6ea7967396368d4075412",
+      "bytes": 243
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-types.log",
+      "sha256": "9fcd804f52d689561cc01ac8db6eafda2f8ba037c209024d56f82b9020c55f96",
+      "bytes": 9193
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-types2.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-web-build.log",
+      "sha256": "bdc1f8d0a7a4c6deb0e8cdb3341801ebf1b2b691d651712879f93a176d6f41a8",
+      "bytes": 5550
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-securestore-install.log",
+      "sha256": "a79693fd59aea7d67f44715e08df9d4e4f2cea8f269c05ae3836bb5bfac40dc3",
+      "bytes": 517
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-web-build2.log",
+      "sha256": "fd9ddae0a4ffa4b9757c5614e4cf0655c7cbd5b2492f69072d1524a798f65210",
+      "bytes": 8045
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-web-build3.log",
+      "sha256": "0777b230f7b8121388eb90b7d0de83805b036d71a672db625cb2b49d65602f2c",
+      "bytes": 9614
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-candidate-types-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-error-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audits/2026-10-03-expo-candidate-adoption/i04-expo-example-error-build.log",
+      "sha256": "c19e61db0b04d88694999902e569ea4d658b53513f06d7a3a5caa8d47e85d3d0",
+      "bytes": 7062
+    }
+  ],
+  "results": {
+    "finalTypesExit": 0,
+    "webBuildExit": 0
+  },
+  "failureHistory": [
+    "Retired @oxyhq imports fail after canonical candidate install.",
+    "Inherited react-native TypeScript condition checked dependency source with starter extra strict flags; customConditions [] selects published declaration files.",
+    "First web export fails missing expo-secure-store; declared Expo 56 compatible ~56.0.4.",
+    "Second export encounters MessagePack truncated cache. Third export uses isolated TMPDIR, without clearing any shared Metro cache, and passes."
+  ],
+  "limits": [
+    "Local candidate Oxy packs, not published final SDK.",
+    "Native SDK modules require development build; no Android/iOS execution from this starter.",
+    "Build-only public config is not a registered client and no auth flow was executed.",
+    "Production manifests/registry lock remain pending; exact candidate inputs are preserved separately."
+  ],
+  "initialSourceCommit": "f82dddee7179602988eff7b2cc663e1bca25ca80"
+}

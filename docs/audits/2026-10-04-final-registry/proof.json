@@ -1,0 +1,317 @@
+{
+  "kind": "examples-final-public-registry-adoption",
+  "sourceHead": "6dfb89ed77e81a3636105f37796e4e4592475ce3",
+  "base": "b3e98a8a",
+  "currentMain": "03f9d52eb123ad929237c42745c6bc7d9ce357a4",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "db30417fc9ca59a0417cec48180c4a455e84cf91e17a7f2575b8fab485320a25"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3731bfc16255432dc8a115d69860d2782e6d5f16f0ac5d6f8dc6a2b945d3c435"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/.env.example",
+      "sha256": "21ae912fc072905d1b4613d4a7ae443b57932cab262903f9ddc379384acbe07a"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/.gitignore",
+      "sha256": "f12fe4a29ba78e32cf207649e2b1d0057b2f5820b5fe9b96378ac163264eae88"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/README.md",
+      "sha256": "de3b55405cd595327d7989a25096f8190b7b077ffd0d433ec8589c3f377f0f2d"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/app.json",
+      "sha256": "a9111c680727d7645307f7fd4523724c61062449c49b417b88c20789aa76b982"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/app/_layout.tsx",
+      "sha256": "7dba27ffb68253c8ebb5c8dd66d978cd79679eb3f5b664bf8c6906473b021753"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/app/index.tsx",
+      "sha256": "aa783b67604a18efee394832012df6eb44c8d5295273a252ea555d561d87e0c7"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/babel.config.js",
+      "sha256": "8e438747a66ea1d65b4c87a0f45e049cdc54a3292f40f629edf53a76744faa6d"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/bun.lock",
+      "sha256": "2d5311358008f6bedafd860cb84021a70f9f780f4cc143151a498e99e44aa9bd"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/expo-env.d.ts",
+      "sha256": "4d1f19dbfea633952a9a24bdfc8ab978a8872e988eacf6752077fe320aa996f8"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/metro.config.js",
+      "sha256": "fdd13347ad0e3b4f6cb1eb29a735b0b2c9d0c49ef762dc2a9082dbe02f993d8d"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/oxy-config.ts",
+      "sha256": "32256e8c27f79b5713d65ee4ab8731db0e19db90f1282ee5d442115b10f0bf14"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/package.json",
+      "sha256": "fbfe79d6158500cc432c70c06e8ef30d8b0dcb18a8ebb7094ea32df0fdb8743b"
+    },
+    {
+      "path": "expo-sign-in-with-oxy/tsconfig.json",
+      "sha256": "d594b04ec7c1209258b56b22203e7d2a409ef0d50fe58bae893a776f914bf8b1"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/.env.example",
+      "sha256": "3164d3f4c04566173beb0630511a9039ada0be36d70d25b8e2854d09bd8977c5"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/.gitignore",
+      "sha256": "630fa40a59e525819c53683545e91280aab96aa30723dfca57ffc0843eeeed93"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/README.md",
+      "sha256": "5719b26287b829a0771857e8a936becdc4545b8cb449fdd7e3625ae6ceeb3c88"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/app/globals.css",
+      "sha256": "93f994962a9b3fae53521585fd0257cd5ec38f465840c1d46e7ffb88a7438344"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/app/layout.tsx",
+      "sha256": "a177e3a21252c19fc1ddb3768b9dd23b673b11cb12a39e84e175c0851da283b2"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/app/page.tsx",
+      "sha256": "92277b4bc207d170f3f0a48c654e0023f5f6609f6f3eee059b0b9f9295f4f81c"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/app/protected/page.tsx",
+      "sha256": "c657c12ad2fd569e9fd5ba2f45cb943c363a6acee2ee270c77ee41f0b4ead68f"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/bun.lock",
+      "sha256": "31d615cf75288ce27a1ea41c2290a144e0b66965dfe7d1407fb477ff736893a7"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/components/auth-panel.tsx",
+      "sha256": "fe98f0f8344f69da26bbe78bcf6487f29cfb71a252ebb346a6f9d5b21b5df5ed"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/components/oxy-provider.tsx",
+      "sha256": "7e61bb64a58cf3e8dfafcc836cc4ec088758c1a47fc4a8c4bc843fdbcef16712"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/components/protected-link.tsx",
+      "sha256": "d82c248d1b6d980247ad9206b4db82b8114bf5219c5192ac7682b951b4ebcbef"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/lib/oxy-config.ts",
+      "sha256": "27721cde33b90032029ebfeb982507770c4b39fee0d7634cf30e6c680b5e1fb7"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/next-env.d.ts",
+      "sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/next.config.ts",
+      "sha256": "5a54cd7324fc0ce44894fca23d82d96363998516773e28bab4dea57fca58a545"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/package.json",
+      "sha256": "3f15387416a6bc3b8f98459f6bbb99d23e7774b7621c1184043d007898a7632a"
+    },
+    {
+      "path": "nextjs-sign-in-with-oxy/tsconfig.json",
+      "sha256": "815ebf9c7a37f68fcf17816595bd0fdd3050964ef5dd71a97fe2209bf39a9e8b"
+    },
+    {
+      "path": "verification/README.md",
+      "sha256": "926246aaae34d3c53dc85ec740503f81b47155af00e7dbad685a3f1078ae8750"
+    },
+    {
+      "path": "vite-react-oxy/.env.example",
+      "sha256": "5f0c1e843614dbd07b9d35d3cd1f2c8aef0b1747fd48b1b5c933ac93d727fca3"
+    },
+    {
+      "path": "vite-react-oxy/.gitignore",
+      "sha256": "607eef58d6b39425823731c44d2444504b130bf8fe1cac9d0478274221b691f7"
+    },
+    {
+      "path": "vite-react-oxy/README.md",
+      "sha256": "93c6595f20c09aacd817433af0c7c568398cf25d5ec39136462edff817236ce1"
+    },
+    {
+      "path": "vite-react-oxy/bun.lock",
+      "sha256": "6cbe377b91e44dc2f848753372cab65b4b95439a45f70ec5f29e7a1692e9f3eb"
+    },
+    {
+      "path": "vite-react-oxy/index.html",
+      "sha256": "ba5aff49d0c77ecedfaa741be8c1c270692df52a16aaa6b1cdc439547ad84d81"
+    },
+    {
+      "path": "vite-react-oxy/package.json",
+      "sha256": "3395df943a00ed70681046d4006c49a8becb40ecb565bb890d2d7306816c9175"
+    },
+    {
+      "path": "vite-react-oxy/src/App.tsx",
+      "sha256": "e12765eeeb29152fe2409a402006d54e1df4edf50b5abd58ca20ec682ef10d9d"
+    },
+    {
+      "path": "vite-react-oxy/src/main.tsx",
+      "sha256": "e3ce3cf33946f9f5865f5d2c006b1644b2c2d58a4b1e3c8a91b9792e5f067518"
+    },
+    {
+      "path": "vite-react-oxy/src/oxy-config.ts",
+      "sha256": "6d9a85cd7f8b9714347e4d6295805990986f43460f357618f18db1ebef406f4d"
+    },
+    {
+      "path": "vite-react-oxy/src/styles.css",
+      "sha256": "e012e7222214d17eb9cef4177f464d93757ce2060a86cc88ab7439f32cdb15a4"
+    },
+    {
+      "path": "vite-react-oxy/src/vite-env.d.ts",
+      "sha256": "391b036c0b38f5efe01a8f17f40aa83a23d75fca51dbbf910b2a7cf8d58acf85"
+    },
+    {
+      "path": "vite-react-oxy/tsconfig.app.json",
+      "sha256": "8d072177dd9caa120c74b657684c21f7eedad5cc8b99ad9fc4a85cbfdc5580e1"
+    },
+    {
+      "path": "vite-react-oxy/tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "vite-react-oxy/tsconfig.node.json",
+      "sha256": "7723b6432bbd3e363d069a0c52dd0f94bdc2ad92a7cd4161bb7abd535a3e143e"
+    },
+    {
+      "path": "vite-react-oxy/vite.config.ts",
+      "sha256": "c6d921484ac6e37ac10d0be66612bbcd4c3a6ddccc37d769f761c2ce757b6eb7"
+    }
+  ],
+  "records": [
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-build-configured.log",
+      "sha256": "127f48271eafec76e3aaf7096757d794bf17529c0419b146a51222daadc17a61",
+      "bytes": 6714
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-build-public-inputs.json",
+      "sha256": "7da7ad2293915fdabd16a9d80c4479ab57f2e9557d4911d1d67003ba548613c5",
+      "bytes": 323
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-build.log",
+      "sha256": "d002ae0fbc195310447590d0a0b0238be1ec13313ae45a4022ba00d13786fd81",
+      "bytes": 18112
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-frozen.log",
+      "sha256": "90faa14413378a6893d350257fc4c8669b4425c46ef72951eb0eb461f7170f06",
+      "bytes": 96
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-install.log",
+      "sha256": "064e6ca7072dfacf00182982051bf44ee97dd16a2fe768f2254feedb91e9fe62",
+      "bytes": 1821
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/expo-types.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/installed-bytecheck.json",
+      "sha256": "08b95ee69e564d9e89030f06bd39bd8dd0525409d10161a00ac17e8836df077d",
+      "bytes": 6465
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-build-configured.log",
+      "sha256": "9a858b929b46ee902accaf5d3276594abcff33cf827088f34fbbdbb6e78bf078",
+      "bytes": 1798
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-build-public-inputs.json",
+      "sha256": "81e7f661c4dc13224c69f18d76f7b7eed836b53b99743182ad0fb4d8254dc02b",
+      "bytes": 318
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-build.log",
+      "sha256": "10967424433c6dfdabed1ffa8a8826c5824c9a898688e6333b6044d2308503c5",
+      "bytes": 1730
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-frozen.log",
+      "sha256": "17c8e4ab1063250cd48d402281ec12179ed5ff5274f00be1c86172c5caa152b8",
+      "bytes": 96
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-install.log",
+      "sha256": "eb8f1d6b5f885595f5dd5e11fd921b34ebc96cffe135c51bf3b677c4150ff25a",
+      "bytes": 1316
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/next-types.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/verify-installed.py",
+      "sha256": "5904430357f5cf29ce609afc6f3a57f9d6a64bdb58087d2cb2a35769c13913e4",
+      "bytes": 2575
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-build-configured.log",
+      "sha256": "d0d8aaddca1fbf84d7b337a5d12d9c0aa9f6f980e921a5e781676875a7422398",
+      "bytes": 11572
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-build-public-inputs.json",
+      "sha256": "0bcc426a3d1e596186b3ff47dc7eb5ae0f2c38c051dc1350068a2e45b03fcaec",
+      "bytes": 297
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-build.log",
+      "sha256": "a1856461c26b897c68ea49b3678daa519f7f28d836c39a74a206b739f51b3633",
+      "bytes": 11572
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-frozen.log",
+      "sha256": "b8906a99e336b9ea3f13a86bfb3aba68d70bb4defec6e516cc995eec9020d196",
+      "bytes": 97
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-install.log",
+      "sha256": "155f4158abb10c84fcf2b3c04d1cf7ad49ae39b52b2b898516f402603574770a",
+      "bytes": 1317
+    },
+    {
+      "path": "docs/audits/2026-10-04-final-registry/records/vite-types.log",
+      "sha256": "98ae1f57bd1b2899b7205cb5ce3a75a863489600a6539d608774dd930a859535",
+      "bytes": 18
+    }
+  ],
+  "acceptance": {
+    "starters": 3,
+    "frozenInstall": true,
+    "typecheck": true,
+    "configuredProductionBuild": true,
+    "installedComparisons": 15,
+    "installedMembers": 72846
+  },
+  "historicalFailures": [
+    "Next unconfigured production build rejects absent registered public client and redirect. Configured build succeeds.",
+    "Expo unconfigured export rejects absent registered public client and redirect. Configured export succeeds.",
+    "Earlier services11.0 logout RED and candidate Expo evidence retained in historical directories."
+  ],
+  "limits": [
+    "Build configuration uses only existing registered local fixture public values; no credentials or registry records created.",
+    "No new browser authentication, native-device, deployment or production-human acceptance claimed.",
+    "Next retains optional-native dynamic-import warnings; Vite retains chunk-size and web Node-crypto warnings.",
+    "No local SDK archive aliases are used by the three installed starters."
+  ]
+}

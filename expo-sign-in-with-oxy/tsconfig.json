@@ -5,10 +5,11 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@/*": ["./*"],
-      "@oxyhq/bloom": ["./node_modules/@oxyhq/bloom/lib/typescript/module/index.d.ts"],
-      "@oxyhq/bloom/*": ["./node_modules/@oxyhq/bloom/lib/typescript/module/*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "customConditions": []
   },
   "include": [
     "**/*.ts",
@@ -16,5 +17,7 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

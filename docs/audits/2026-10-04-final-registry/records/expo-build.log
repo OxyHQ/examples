@@ -1,0 +1,92 @@
+$ expo export --platform web
+Starting Metro Bundler
+
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:739218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+ WARN  Attempted to import the module "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@noble/hashes/crypto.js" which is not listed in the "exports" of "/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@noble/hashes" under the requested subpath "./crypto.js". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+λ Bundled 16320ms node_modules/@expo/router-server/node/render.js (2736 modules)
+Web Bundled 18520ms node_modules/expo-router/entry.js (2440 modules)
+
+Metro error: Configure EXPO_PUBLIC_OXY_CLIENT_ID and the exact registered EXPO_PUBLIC_OXY_REDIRECT_URI.
+
+  Error: Configure EXPO_PUBLIC_OXY_CLIENT_ID and the exact registered EXPO_PUBLIC_OXY_REDIRECT_URI.
+    at /home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2841:503
+    at f (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:2068)
+    at a (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:1564)
+    at i (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:586)
+    at /home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:860:241
+    at f (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:2068)
+    at a (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:1492)
+    at i (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:586)
+    at Object.get [as ./_layout.tsx] (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:859:104)
+    at n (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:859:183)
+    at Object.loadRoute (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:2820)
+    at v (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:6787)
+    at u (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:3765)
+    at e.getRoutes (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:134)
+    at n (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:774:277)
+    at e.getBuildTimeServerManifestAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2895:169)
+    at acc.<computed> (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/start/server/getStaticRenderFunctions.js:128:33)
+    at MetroBundlerDevServer.getStaticRenderFunctionAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/start/server/metro/MetroBundlerDevServer.js:395:38)
+    at async Promise.all (index 1)
+    at async exportFromServerAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportStaticAsync.js:201:88)
+    at async exportAppAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportApp.js:371:17)
+    at async exportAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportAsync.js:91:5)
+Error: Configure EXPO_PUBLIC_OXY_CLIENT_ID and the exact registered EXPO_PUBLIC_OXY_REDIRECT_URI.
+Error: Configure EXPO_PUBLIC_OXY_CLIENT_ID and the exact registered EXPO_PUBLIC_OXY_REDIRECT_URI.
+    at /home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2841:503
+    at f (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:2068)
+    at a (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:1564)
+    at i (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:586)
+    at /home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:860:241
+    at f (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:2068)
+    at a (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:1492)
+    at i (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2:586)
+    at Object.get [as ./_layout.tsx] (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:859:104)
+    at n (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:859:183)
+    at Object.loadRoute (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:2820)
+    at v (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:6787)
+    at u (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:3765)
+    at e.getRoutes (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:775:134)
+    at n (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:774:277)
+    at e.getBuildTimeServerManifestAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/router-server/node/render.js.bundle?platform=web&dev=false&hot=false&minify=true&transform.engine=hermes&transform.routerRoot=app&resolver.environment=node&transform.environment=node&resolver.exporting=true&unstable_transformProfile=hermes-stable:2895:169)
+    at acc.<computed> (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/start/server/getStaticRenderFunctions.js:128:33)
+    at MetroBundlerDevServer.getStaticRenderFunctionAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/start/server/metro/MetroBundlerDevServer.js:395:38)
+    at async Promise.all (index 1)
+    at async exportFromServerAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportStaticAsync.js:201:88)
+    at async exportAppAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportApp.js:371:17)
+    at async exportAsync (/home/nate/Oxy/examples/.worktrees/1519-final-registry-20261004/expo-sign-in-with-oxy/node_modules/@expo/cli/build/src/export/exportAsync.js:91:5)
+error: script "build" exited with code 1

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "Apache-2.0",
-  "description": "Expo SDK 56 starter showing OxySignInButton from @oxyhq/services.",
+  "description": "Expo SDK 56 starter showing OxySignInButton from @oxy.so/services.",
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
@@ -15,9 +15,6 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
-    "@oxyhq/bloom": "^0.8.1",
-    "@oxyhq/core": "^3.4.1",
-    "@oxyhq/services": "^10.2.0",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-navigation/native": "^7.1.33",
     "@tanstack/react-query": "^5.100",
@@ -45,7 +42,24 @@
     "react-native-screens": "4.25.1",
     "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "@oxy.so/bloom": "6.2.1",
+    "@oxy.so/core": "4.2.0",
+    "@oxy.so/services": "11.1.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "@tanstack/react-query-persist-client": "^5.101.0",
+    "@tanstack/query-async-storage-persister": "^5.101.0",
+    "@tanstack/query-sync-storage-persister": "^5.101.0",
+    "react-native-qrcode-svg": "^6.3.0",
+    "react-native-css": "^3.0.6",
+    "react-native-worklets": "^0.8.0",
+    "expo-image-picker": "~56.0.0",
+    "expo-clipboard": "~56.0.0",
+    "expo-notifications": "~56.0.0",
+    "zustand": "^5.0.0",
+    "react-native-keyboard-controller": "1.21.6",
+    "@oxy.so/contracts": "4.9.0",
+    "expo-secure-store": "~56.0.4"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",
@@ -53,5 +67,24 @@
   },
   "engines": {
     "node": ">=18.18.0"
+  },
+  "overrides": {
+    "@oxy.so/contracts": "4.9.0",
+    "@oxy.so/protocol": "1.2.2",
+    "@oxy.so/core": "4.2.0",
+    "@oxy.so/services": "11.1.0",
+    "@oxy.so/mcp": "1.1.0",
+    "@oxy.so/bloom": "6.2.1"
+  },
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native-keyboard-controller",
+        "react-native-qrcode-svg",
+        "react-native-worklets",
+        "react-native-svg",
+        "expo-secure-store"
+      ]
+    }
   }
 }

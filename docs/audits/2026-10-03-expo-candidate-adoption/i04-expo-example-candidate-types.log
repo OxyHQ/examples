@@ -1,0 +1,79 @@
+$ tsc --noEmit
+app/index.tsx(54,41): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{} | null' is not assignable to type 'ReactNode'.
+      Type '{}' is not assignable to type 'ReactNode'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{} | null' is not assignable to type 'ReactNode'.
+      Type '{}' is not assignable to type 'ReactNode'.
+node_modules/@oxy.so/services/src/ui/components/FollowButton.tsx(164,9): error TS2322: Type 'boolean | null | undefined' is not assignable to type 'boolean | null'.
+  Type 'undefined' is not assignable to type 'boolean | null'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(127,60): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(127,81): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(194,49): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(194,60): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(194,73): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(194,84): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(225,24): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(225,37): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(226,8): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(226,19): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(231,51): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(248,56): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(255,20): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(256,13): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(259,22): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(270,84): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(270,95): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(270,105): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/SurfaceScreen.tsx(277,42): error TS18048: 'top' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/photogrid/JustifiedPhotoGrid.tsx(163,58): error TS2345: Argument of type 'FileMetadata[] | undefined' is not assignable to parameter of type 'FileMetadata[]'.
+  Type 'undefined' is not assignable to type 'FileMetadata[]'.
+node_modules/@oxy.so/services/src/ui/components/photogrid/JustifiedPhotoGrid.tsx(206,37): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/components/photogrid/JustifiedPhotoGrid.tsx(218,82): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+node_modules/@oxy.so/services/src/ui/navigation/surfaceNavStack.ts(97,5): error TS2322: Type 'NavFrame | undefined' is not assignable to type 'NavFrame'.
+  Type 'undefined' is not assignable to type 'NavFrame'.
+node_modules/@oxy.so/services/src/ui/navigation/surfaceNavStack.ts(125,46): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/navigation/surfaceNavStack.ts(152,9): error TS2322: Type '{ step: number; route?: RouteName | undefined; props?: Record<string, unknown> | undefined; }' is not assignable to type 'NavFrame'.
+  Types of property 'route' are incompatible.
+    Type 'RouteName | undefined' is not assignable to type 'RouteName'.
+      Type 'undefined' is not assignable to type 'RouteName'.
+node_modules/@oxy.so/services/src/ui/screens/EditProfileFieldScreen.tsx(116,5): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+node_modules/@oxy.so/services/src/ui/screens/EditProfileFieldScreen.tsx(554,54): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'ProfileFieldValue'.
+  Type 'undefined' is not assignable to type 'ProfileFieldValue'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(230,21): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(337,37): error TS18048: 'file' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(340,60): error TS18048: 'file' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(350,25): error TS18048: 'file' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(365,32): error TS2345: Argument of type '(FileMetadata | undefined)[]' is not assignable to parameter of type 'FileMetadata[]'.
+  Type 'FileMetadata | undefined' is not assignable to type 'FileMetadata'.
+    Type 'undefined' is not assignable to type 'FileMetadata'.
+node_modules/@oxy.so/services/src/ui/screens/FileManagementScreen.tsx(1168,35): error TS2345: Argument of type '"name" | "type" | "size" | "date" | undefined' is not assignable to parameter of type 'SetStateAction<"name" | "type" | "size" | "date">'.
+  Type 'undefined' is not assignable to type 'SetStateAction<"name" | "type" | "size" | "date">'.
+node_modules/@oxy.so/services/src/ui/screens/LanguageSelectorScreen.tsx(104,39): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+node_modules/@oxy.so/services/src/ui/screens/PaymentGatewayScreen.tsx(83,52): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/ProfileScreen.tsx(298,36): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(220,13): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(242,143): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(250,73): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(251,26): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(251,98): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(253,36): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(253,53): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(255,30): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(263,22): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/WelcomeNewUserScreen.tsx(290,22): error TS18048: 'step' is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/screens/fileManagement/hooks/useFileUploadState.ts(176,48): error TS2345: Argument of type 'UploadCandidate | undefined' is not assignable to parameter of type 'UploadCandidate'.
+  Type 'undefined' is not assignable to type 'UploadCandidate'.
+node_modules/@oxy.so/services/src/ui/screens/fileManagement/hooks/useFileUploadState.ts(177,48): error TS2345: Argument of type 'UploadCandidate | undefined' is not assignable to parameter of type 'UploadCandidate'.
+  Type 'undefined' is not assignable to type 'UploadCandidate'.
+node_modules/@oxy.so/services/src/ui/screens/fileManagement/hooks/useFileUploadState.ts(178,48): error TS2345: Argument of type 'UploadCandidate | undefined' is not assignable to parameter of type 'UploadCandidate'.
+  Type 'undefined' is not assignable to type 'UploadCandidate'.
+node_modules/@oxy.so/services/src/ui/screens/trust/TrustRewardsScreen.tsx(333,34): error TS2532: Object is possibly 'undefined'.
+node_modules/@oxy.so/services/src/ui/session/tokenLossRecovery.ts(117,19): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+node_modules/@oxy.so/services/src/ui/stores/followStore.ts(246,11): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.

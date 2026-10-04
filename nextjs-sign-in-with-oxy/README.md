@@ -1,108 +1,27 @@
-# Sign in with Oxy — Next.js Starter
+# Sign in with Oxy — Next.js 15 + App Router
 
-A minimal Next.js 15 (App Router) starter that demonstrates **Sign in with Oxy**
-using the [`@oxyhq/auth`](https://www.npmjs.com/package/@oxyhq/auth) web SDK.
+A standalone external application using the published `@oxy.so/services` SDK: one `OxyProvider`, its `OxySignInButton`, and `useAuth()` for the signed-in state and sign-out action. `BloomProvider` supplies the SDK UI theme.
 
-## What this shows
+## Configure and run
 
-- Wrapping a Next.js app with `WebOxyProvider` (the Oxy auth context).
-- Reading the live auth state via `useAuth()` (user, loading, error, helpers).
-- Triggering sign-in (`signIn()`) — auto-picks FedCM, popup, or redirect.
-- Signing out (`signOut()`).
-- A client-side protected route (`/protected`) that redirects to `/` when
-  signed out.
-
-It does **not** include: Tailwind, shadcn, Husky, ESLint configs beyond the
-defaults — by design. Copy what you need, drop what you don't.
-
-## Stack
-
-| Layer    | Choice                                  |
-| -------- | --------------------------------------- |
-| Framework | Next.js 15, App Router, React 19       |
-| Language  | TypeScript (strict)                    |
-| Auth      | `@oxyhq/auth` + `@oxyhq/core`          |
-| Styling   | Hand-rolled CSS in `app/globals.css`   |
-
-## Install
-
-```bash
-bun install
-# or: npm install / pnpm install
-```
-
-## Configure
-
-Copy the env template and point it at your Oxy API.
+Copy `.env.example` to `.env.local` and fill in the registered public client ID. The template documents every setting. The application must be registered as `third_party`, with its exact callback URI in `redirectUris`; an Oxy-branded example receives no internal-app exemption. No client secret belongs in browser code. Missing client ID or return URI fails closed.
 
 ```bash
 cp .env.example .env.local
-```
-
-Open `.env.local` and adjust:
-
-```env
-NEXT_PUBLIC_OXY_API_URL=https://api.oxy.so
-# NEXT_PUBLIC_OXY_AUTH_WEB_URL=https://auth.oxy.so  # only if self-hosting
-```
-
-> The defaults point at Oxy's public production API. To run against a local
-> Oxy API, set `NEXT_PUBLIC_OXY_API_URL=http://localhost:3001`.
-
-## Run
-
-```bash
+bun install --frozen-lockfile --minimum-release-age=0
 bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000). Click **Sign in with Oxy**
-— you'll be sent to Oxy Accounts, authenticate, and bounce back signed in.
-
-## Build
-
-```bash
 bun run build
-bun run start
+bun run typecheck
 ```
 
-## How the integration is wired
+The SDK opens the consent-bearing OAuth window from the button press and owns PKCE, `state` validation, token exchange, and the return route. A blocked popup uses the registered URI. Keep the provider mounted there. The app has no callback handler, token storage, silent restore, or sign-in screen. There are no cookies, FedCM, hidden iframes, or authorization requests on page load.
 
-```
-app/
-  layout.tsx                  ← Wraps the tree in <OxyAuthProvider />
-  page.tsx                    ← Renders <AuthPanel /> + protected link
-  protected/page.tsx          ← Client-side guarded page (uses useAuth)
-components/
-  oxy-provider.tsx            ← 'use client' wrapper around <WebOxyProvider>
-  auth-panel.tsx              ← Sign-in / sign-out + user display
-  protected-link.tsx          ← Shows the protected link when signed in
-```
+Configuration is public and baked into the browser build. Register the deployed callback URI before building for that origin. A client-side protected view only controls presentation; a backend must use `OxyServer` from `@oxy.so/core/server` and its middleware to authorize requests.
 
-Two important details:
+## Verification
 
-1. **`'use client'` on the provider.** `WebOxyProvider` uses `localStorage`,
-   `window`, and FedCM, so it cannot run during SSR. We isolate it in
-   `components/oxy-provider.tsx` and import that wrapper from
-   `app/layout.tsx`.
-2. **Client-side route protection.** The `/protected` page reads
-   `isAuthenticated` from `useAuth()` after hydration. For server-side
-   protection (e.g. blocking the HTML response before it ships), call your
-   Oxy API from a Route Handler / Server Component with the user's session
-   token — that pattern is outside the scope of this minimal starter.
+The current pins are services 11.1.0, core 4.2.0, contracts 4.9.0 and Bloom 6.2.1 from the public registry. Frozen installation, TypeScript and production build pass. Installed files match the accepted published archives. These starter checks establish packaging and source compatibility; they do not replace a runtime test with your registered client.
 
-## Deploy
+The old release's logout failure remains in the historical `verification/` record. Final shared SDK web/native acceptance is linked separately in the [registry proof](../docs/audits/2026-10-04-final-registry/README.md); no local auth workaround was added to this starter.
 
-Works on any Node.js host that runs Next.js 15 — Vercel, Netlify, AWS,
-Cloudflare Pages, self-hosted Node. Make sure your `NEXT_PUBLIC_OXY_API_URL`
-env var is configured in the deploy target.
-
-If your deploy origin (e.g. `https://app.example.com`) is **different** from
-the Oxy auth web app (`https://auth.oxy.so`), the SDK will automatically use
-the popup or redirect flow. FedCM only fires when the browser supports it and
-the user has linked their Oxy account to the relying party.
-
-## Learn more
-
-- `@oxyhq/auth` source: https://github.com/oxyhq/sdk/tree/main/packages/auth-sdk
-- `@oxyhq/core` source: https://github.com/oxyhq/sdk/tree/main/packages/core
-- Oxy platform docs: https://oxy.so
+[Oxy integration contracts](https://github.com/OxyHQ/oxy/blob/main/docs/auth/integration-guide.md)

@@ -1,0 +1,67 @@
+$ expo export --platform web
+Starting Metro Bundler
+
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:3916352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+ WARN  Attempted to import the module "/home/nate/Oxy/examples/.worktrees/1519-final-sdk-adoption-20261003/expo-sign-in-with-oxy/node_modules/@noble/hashes/crypto.js" which is not listed in the "exports" of "/home/nate/Oxy/examples/.worktrees/1519-final-sdk-adoption-20261003/expo-sign-in-with-oxy/node_modules/@noble/hashes" under the requested subpath "./crypto.js". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+λ Bundling failed 14726ms node_modules/@expo/router-server/node/render.js (2718 modules)
+Error: Unable to resolve module expo-secure-store from /home/nate/Oxy/examples/.worktrees/1519-final-sdk-adoption-20261003/expo-sign-in-with-oxy/node_modules/@oxy.so/services/lib/module/ui/session/nativeSecureStorage.js: expo-secure-store could not be found within the project or in these directories:
+  node_modules
+[0m [90m 32 |[39m   [36mif[39m ([33m![39msecureStorePromise) {
+ [90m 33 |[39m     [36mconst[39m moduleName [33m=[39m [33mSECURE_STORE_MODULE[39m[33m;[39m
+[31m[1m>[22m[39m[90m 34 |[39m     secureStorePromise [33m=[39m [36mimport[39m(moduleName)[33m.[39mthen(mod [33m=>[39m {
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 35 |[39m       [36mif[39m ([36mtypeof[39m mod[33m.[39mgetItemAsync [33m===[39m [32m'function'[39m [33m&&[39m [36mtypeof[39m mod[33m.[39msetItemAsync [33m===[39m [32m'function'[39m [33m&&[39m [36mtypeof[39m mod[33m.[39mdeleteItemAsync [33m===[39m [32m'function'[39m) {
+ [90m 36 |[39m         [36mreturn[39m {
+ [90m 37 |[39m           getItemAsync[33m:[39m mod[33m.[39mgetItemAsync[33m.[39mbind(mod)[33m,[39m[0m
+
+Import stack:
+
+ node_modules/@oxy.so/services/lib/module/ui/session/nativeSecureStorage.js
+ | import "expo-secure-store"
+
+ node_modules/@oxy.so/services/lib/module/ui/session/identityBinding.js
+ | import "./nativeSecureStorage.js"
+
+ node_modules/@oxy.so/services/lib/module/index.js
+ | import "./ui/session/identityBinding.js"
+
+ app/_layout.tsx
+ | import "@oxy.so/services"
+
+ app (require.context)
+
+error: script "build" exited with code 1

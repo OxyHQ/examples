@@ -6,7 +6,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Sign in with Oxy — Next.js Starter',
   description:
-    'A minimal Next.js 15 App Router starter showing Sign in with Oxy via @oxyhq/auth.',
+    'A minimal Next.js 15 App Router starter showing Sign in with Oxy via @oxy.so/services.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

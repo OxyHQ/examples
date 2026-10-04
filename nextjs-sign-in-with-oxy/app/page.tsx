@@ -7,7 +7,7 @@ export default function HomePage() {
       <header className="hero">
         <h1>Sign in with Oxy</h1>
         <p className="muted">
-          Next.js 15 + App Router + <code>@oxyhq/auth</code>.
+          Next.js 15 + App Router + <code>@oxy.so/services</code>.
         </p>
       </header>
       <AuthPanel />
