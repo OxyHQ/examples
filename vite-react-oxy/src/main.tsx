@@ -14,9 +14,9 @@ if (!container) {
 createRoot(container).render(
   <StrictMode>
     <BloomProvider>
-    <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
-      <App />
-    </OxyProvider>
+      <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
+        <App />
+      </OxyProvider>
     </BloomProvider>
   </StrictMode>,
 );

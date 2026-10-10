@@ -7,8 +7,7 @@ import { OXY_REDIRECT_URI } from './oxy-config';
  * here, two buttons.
  */
 export function App() {
-  const { user, isAuthenticated, isLoading, error, signOut } =
-    useAuth();
+  const { user, isAuthenticated, isLoading, error, signOut } = useAuth();
 
   return (
     <main className="page">
@@ -40,9 +39,7 @@ export function App() {
       ) : (
         <Card>
           <h2>You're signed out</h2>
-          <p className="muted">
-            Click below to authenticate via Oxy Accounts.
-          </p>
+          <p className="muted">Click below to authenticate via Oxy Accounts.</p>
           {error ? <p className="error">{error}</p> : null}
           <OxySignInButton oauthRedirectUri={OXY_REDIRECT_URI} />
         </Card>

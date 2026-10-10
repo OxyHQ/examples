@@ -15,4 +15,16 @@ The SDK owns sign-in, the callback, and session state. Starters do not contain l
 
 See [final registry verification](docs/audits/2026-10-04-final-registry/README.md) for package hashes and build limits. The earlier `verification/` record preserves the old SDK's logout regression; it does not describe the currently pinned release.
 
+## Formatting and linting
+
+One root [Biome](https://biomejs.dev) config covers all three starters. Run it from the repository root (CI runs `bunx @biomejs/biome@2.5.15 ci .` on every pull request):
+
+```bash
+bunx @biomejs/biome@2.5.15 check .          # lint + format check
+bunx @biomejs/biome@2.5.15 check --write .  # apply safe fixes and formatting
+bunx @biomejs/biome@2.5.15 format --write . # format only
+```
+
+There is deliberately no root `package.json` or lockfile: a root `bun.lock` would make Next.js treat the repository root as its workspace root. In the Expo starter, a Biome plugin (`biome-plugins/expo-env-vars.grit`) rejects destructured or computed `process.env` reads, which Metro does not inline. When you copy a starter out of this repository, copy `biome.json` (and the plugin, for Expo) along with it if you want the same checks.
+
 [Platform repository](https://github.com/OxyHQ/oxy) · [Third-party integration contracts](https://github.com/OxyHQ/oxy/blob/main/docs/auth/integration-guide.md)

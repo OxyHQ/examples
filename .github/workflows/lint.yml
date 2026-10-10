@@ -1,0 +1,30 @@
+# Biome formatting and lint check for every starter.
+#
+# The repo has no root package.json on purpose: each starter is a
+# self-contained project, and a root bun.lock would make Next.js infer the
+# repo root as its workspace root (multiple-lockfiles warning, different
+# outputFileTracingRoot). Biome therefore runs through bunx at an exact
+# version, the same one pinned by the $schema in biome.json.
+
+name: Lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lint-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  biome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+      - name: Biome
+        run: bunx @biomejs/biome@2.5.15 ci .

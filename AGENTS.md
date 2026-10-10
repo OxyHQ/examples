@@ -18,6 +18,15 @@ bun run dev    # Next.js / Vite
 bun run start  # Expo
 ```
 
+## Lint and format (run at the repo root)
+
+```bash
+bunx @biomejs/biome@2.5.15 ci .             # what CI runs (.github/workflows/lint.yml)
+bunx @biomejs/biome@2.5.15 check --write .  # fix formatting before committing
+```
+
+One root `biome.json`; no ESLint or Prettier. Do not add a root `package.json`/`bun.lock` (Next.js would infer the repo root as its workspace root). `expo-sign-in-with-oxy/**` also runs `biome-plugins/expo-env-vars.grit` (port of `eslint-plugin-expo` `no-dynamic-env-var` / `no-env-var-destructuring`). `docs/audits/` and `verification/` are excluded: they are hashed evidence records.
+
 ## Rules for this repo
 
 - Each example must remain self-contained and buildable in isolation by a third-party developer.
