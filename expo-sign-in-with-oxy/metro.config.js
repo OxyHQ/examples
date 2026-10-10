@@ -7,10 +7,6 @@ const config = getDefaultConfig(__dirname);
 // includes `ttf` and `otf` but not the web-only formats; without these the
 // `expo export --platform web` build fails with
 // `Unable to resolve module ./assets/X.woff2`.
-config.resolver.assetExts = [
-  ...config.resolver.assetExts,
-  'woff2',
-  'woff',
-];
+config.resolver.assetExts = [...config.resolver.assetExts, 'woff2', 'woff'];
 
 module.exports = config;

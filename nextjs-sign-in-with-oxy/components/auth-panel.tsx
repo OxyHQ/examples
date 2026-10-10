@@ -6,8 +6,7 @@ import { OXY_REDIRECT_URI } from '@/lib/oxy-config';
 
 /** External OAuth/PKCE sign-in starts only from the SDK button's user gesture. */
 export function AuthPanel() {
-  const { user, isAuthenticated, isLoading, error, signOut } =
-    useAuth();
+  const { user, isAuthenticated, isLoading, error, signOut } = useAuth();
 
   if (isLoading) {
     return (
@@ -22,8 +21,8 @@ export function AuthPanel() {
       <div className="card">
         <h2>Sign in with Oxy</h2>
         <p className="muted">
-          Oxy asks for your consent in its authorization window. A blocked popup
-          uses the registered return URL instead.
+          Oxy asks for your consent in its authorization window. A blocked popup uses the registered
+          return URL instead.
         </p>
         {error ? <p className="error">{error}</p> : null}
         <OxySignInButton oauthRedirectUri={OXY_REDIRECT_URI} />

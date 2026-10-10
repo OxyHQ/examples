@@ -1,12 +1,5 @@
 import { useCallback } from 'react';
-import {
-  Alert,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { OxySignInButton, useAuth } from '@oxy.so/services';
@@ -15,33 +8,23 @@ import { OXY_REDIRECT_URI } from '../oxy-config';
 
 export default function HomeScreen() {
   const { isAuthenticated, isLoading, user, signOut, error } = useAuth();
-  const displayName = user
-    ? user.name?.displayName ?? getNormalizedUserHandle(user)
-    : null;
+  const displayName = user ? (user.name?.displayName ?? getNormalizedUserHandle(user)) : null;
 
   const handleLogout = useCallback(async () => {
     try {
       await signOut();
     } catch (error) {
       // The hook exposes the failure while preserving the current session.
-      Alert.alert(
-        'Sign out failed',
-        'Something went wrong. Please try again.',
-      );
+      Alert.alert('Sign out failed', 'Something went wrong. Please try again.');
     }
   }, [signOut]);
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
-      <ScrollView
-        contentContainerStyle={styles.scroll}
-        keyboardShouldPersistTaps="handled"
-      >
+      <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <View style={styles.header}>
           <Text style={styles.title}>Sign in with Oxy</Text>
-          <Text style={styles.subtitle}>
-            Expo + Expo Router + @oxy.so/services.
-          </Text>
+          <Text style={styles.subtitle}>Expo + Expo Router + @oxy.so/services.</Text>
         </View>
 
         <View style={styles.card}>
@@ -52,9 +35,7 @@ export default function HomeScreen() {
               <Text style={styles.cardTitle}>You're signed in</Text>
               <Text style={styles.muted}>Welcome back,</Text>
               <Text style={styles.body}>{displayName}</Text>
-              {user.email ? (
-                <Text style={styles.muted}>{user.email}</Text>
-              ) : null}
+              {user.email ? <Text style={styles.muted}>{user.email}</Text> : null}
               <Pressable
                 accessibilityRole="button"
                 style={({ pressed }) => [
@@ -71,16 +52,17 @@ export default function HomeScreen() {
             <>
               <Text style={styles.cardTitle}>You're signed out</Text>
               <Text style={styles.muted}>
-                Tap below to open Oxy authorization for this registered app.
-                The SDK completes OAuth and keeps the session in memory.
+                Tap below to open Oxy authorization for this registered app. The SDK completes OAuth
+                and keeps the session in memory.
               </Text>
-              <OxySignInButton
-                oauthRedirectUri={OXY_REDIRECT_URI}
-                nativeOAuthCompletion="sdk"
-              />
+              <OxySignInButton oauthRedirectUri={OXY_REDIRECT_URI} nativeOAuthCompletion="sdk" />
             </>
           )}
-          {error ? <Text accessibilityRole="alert" style={styles.muted}>{error}</Text> : null}
+          {error ? (
+            <Text accessibilityRole="alert" style={styles.muted}>
+              {error}
+            </Text>
+          ) : null}
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -13,8 +13,8 @@ export default function HomePage() {
       <AuthPanel />
       <ProtectedLink />
       <footer className="muted">
-        Replace <code>NEXT_PUBLIC_OXY_API_URL</code> in <code>.env</code> to
-        point at your own Oxy API.
+        Replace <code>NEXT_PUBLIC_OXY_API_URL</code> in <code>.env</code> to point at your own Oxy
+        API.
       </footer>
     </main>
   );
