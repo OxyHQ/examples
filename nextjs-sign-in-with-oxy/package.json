@@ -14,10 +14,10 @@
     "next": "^15.1.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "@oxy.so/services": "11.1.0",
-    "@oxy.so/core": "4.2.0",
-    "@oxy.so/contracts": "4.9.0",
-    "@oxy.so/bloom": "6.2.1",
+    "@oxy.so/services": "13.0.0",
+    "@oxy.so/core": "7.1.0",
+    "@oxy.so/contracts": "6.0.0",
+    "@oxy.so/bloom": "15.11.0",
     "react-native": "0.85.3",
     "react-native-web": "0.21.2",
     "expo": "~56.0.3",
@@ -48,7 +48,8 @@
     "react-native-svg": "15.15.4",
     "react-native-qrcode-svg": "^6.3.0",
     "react-native-css": "^3.0.6",
-    "zustand": "^5.0.0"
+    "zustand": "^5.0.0",
+    "react-native-keyboard-controller": "1.22.7"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
@@ -60,11 +61,11 @@
     "node": ">=18.18.0"
   },
   "overrides": {
-    "@oxy.so/contracts": "4.9.0",
-    "@oxy.so/protocol": "1.2.2",
-    "@oxy.so/core": "4.2.0",
-    "@oxy.so/services": "11.1.0",
-    "@oxy.so/mcp": "1.1.0",
-    "@oxy.so/bloom": "6.2.1"
+    "@oxy.so/contracts": "6.0.0",
+    "@oxy.so/protocol": "1.5.1",
+    "@oxy.so/core": "7.1.0",
+    "@oxy.so/services": "13.0.0",
+    "@oxy.so/mcp": "1.4.0",
+    "@oxy.so/bloom": "15.11.0"
   }
 }

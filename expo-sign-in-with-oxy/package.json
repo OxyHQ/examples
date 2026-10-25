@@ -43,9 +43,9 @@
     "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0",
     "socket.io-client": "^4.8.1",
-    "@oxy.so/bloom": "6.2.1",
-    "@oxy.so/core": "4.2.0",
-    "@oxy.so/services": "11.1.0",
+    "@oxy.so/bloom": "15.11.0",
+    "@oxy.so/core": "7.1.0",
+    "@oxy.so/services": "13.0.0",
     "@react-native-community/netinfo": "^11.4.1",
     "@tanstack/react-query-persist-client": "^5.101.0",
     "@tanstack/query-async-storage-persister": "^5.101.0",
@@ -57,8 +57,8 @@
     "expo-clipboard": "~56.0.0",
     "expo-notifications": "~56.0.0",
     "zustand": "^5.0.0",
-    "react-native-keyboard-controller": "1.21.6",
-    "@oxy.so/contracts": "4.9.0",
+    "react-native-keyboard-controller": "1.22.7",
+    "@oxy.so/contracts": "6.0.0",
     "expo-secure-store": "~56.0.4"
   },
   "devDependencies": {
@@ -69,12 +69,12 @@
     "node": ">=18.18.0"
   },
   "overrides": {
-    "@oxy.so/contracts": "4.9.0",
-    "@oxy.so/protocol": "1.2.2",
-    "@oxy.so/core": "4.2.0",
-    "@oxy.so/services": "11.1.0",
-    "@oxy.so/mcp": "1.1.0",
-    "@oxy.so/bloom": "6.2.1"
+    "@oxy.so/contracts": "6.0.0",
+    "@oxy.so/protocol": "1.5.1",
+    "@oxy.so/core": "7.1.0",
+    "@oxy.so/services": "13.0.0",
+    "@oxy.so/mcp": "1.4.0",
+    "@oxy.so/bloom": "15.11.0"
   },
   "expo": {
     "install": {
