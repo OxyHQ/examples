@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { OxySignInButton, useAuth } from '@oxy.so/services';
+import { OxySignInButton, useAuth } from '@oxy.so/services/ui/client';
 import { getNormalizedUserHandle } from '@oxy.so/core';
 import { OXY_REDIRECT_URI } from '../oxy-config';
 
@@ -13,7 +13,7 @@ export default function HomeScreen() {
   const handleLogout = useCallback(async () => {
     try {
       await signOut();
-    } catch (error) {
+    } catch {
       // The hook exposes the failure while preserving the current session.
       Alert.alert('Sign out failed', 'Something went wrong. Please try again.');
     }

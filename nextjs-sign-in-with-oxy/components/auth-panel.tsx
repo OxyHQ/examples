@@ -1,6 +1,6 @@
 'use client';
 
-import { OxySignInButton, useAuth } from '@oxy.so/services';
+import { OxySignInButton, useAuth } from '@oxy.so/services/ui/client';
 import { getNormalizedUserHandle } from '@oxy.so/core';
 import { OXY_REDIRECT_URI } from '@/lib/oxy-config';
 

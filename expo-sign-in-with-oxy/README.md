@@ -54,3 +54,9 @@ The final published versions and frozen install, types and web-export results
 are recorded in [the registry proof](../docs/audits/2026-10-04-final-registry/README.md).
 Earlier candidate evidence is preserved separately; this export does not claim a
 new native device test of this starter.
+
+These starters remain **third-party OAuth applications**. Register their exact
+redirect URI and requested scopes in Oxy; external consent, scope limits and grant
+revocation still apply. The own-app scope-free contract does not turn a starter
+into an Oxy-owned application. No client secret or trusted-origin override belongs
+in these bundles.
