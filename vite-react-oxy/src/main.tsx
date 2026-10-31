@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BloomThemeProvider } from '@oxy.so/bloom/theme';
+import { BloomProvider } from '@oxy.so/bloom/provider';
 import { OxyProvider } from '@oxy.so/services/ui/client';
 import { OXY_API_URL, OXY_CLIENT_ID } from './oxy-config';
 import { App } from './App.tsx';
@@ -13,10 +13,10 @@ if (!container) {
 
 createRoot(container).render(
   <StrictMode>
-    <BloomThemeProvider>
+    <BloomProvider>
       <OxyProvider baseURL={OXY_API_URL} clientId={OXY_CLIENT_ID}>
         <App />
       </OxyProvider>
-    </BloomThemeProvider>
+    </BloomProvider>
   </StrictMode>,
 );
