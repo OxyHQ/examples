@@ -8,7 +8,7 @@ Standalone Next.js, Vite, and Expo reference applications. Each directory has it
 | [Vite](vite-react-oxy) | Same public provider and button | Frozen install, types and production build verified |
 | [Expo](expo-sign-in-with-oxy) | Published provider and shared native OAuth completion | Frozen install, types and web export verified; native development build required for device testing |
 
-All three starters pin registry-published services 13.0.0, core 7.1.0, contracts 6.0.0 and Bloom 15.11.0. Protocol 1.5.1 is resolved transitively. The source consumes registry packages without local aliases or SDK forks. The starters use the published Expo/native peers required by the SDK.
+All three starters pin registry-published services 14.1.2, core 7.13.0, contracts 6.5.0 and Bloom 16.14.1. Protocol 1.5.1 is resolved transitively. The source consumes registry packages without local aliases or SDK forks. The starters use the published Expo/native peers required by the SDK.
 Each `.env.example` documents the API URL, registered public client ID, and exact registered return URI. Fill the client ID before building. The examples are external `third_party` apps: ordinary OAuth + PKCE and consent apply regardless of their Oxy name. No new registry records or real credentials are created by this repository.
 
 The SDK owns sign-in, the callback, and session state. Starters do not contain local token plumbing or sign-in screens. Local fixture/browser checks are maintained separately from the starters; there is no added test framework. These checks do not prove live SSO, production deployment, or provider grants.
