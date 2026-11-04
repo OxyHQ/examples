@@ -44,7 +44,7 @@
     "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0",
     "socket.io-client": "^4.8.1",
-    "@oxy.so/bloom": "16.14.1",
+    "@oxy.so/bloom": "17.4.0",
     "@oxy.so/core": "7.13.0",
     "@oxy.so/services": "14.1.2",
     "@react-native-community/netinfo": "^11.4.1",
@@ -76,7 +76,7 @@
     "@oxy.so/core": "7.13.0",
     "@oxy.so/services": "14.1.2",
     "@oxy.so/mcp": "1.4.0",
-    "@oxy.so/bloom": "16.14.1"
+    "@oxy.so/bloom": "17.4.0"
   },
   "expo": {
     "install": {
