@@ -1,6 +1,6 @@
 # Sign in with Oxy — Next.js 15 + App Router
 
-A standalone external application using the published `@oxy.so/services` SDK: one `OxyProvider`, its `OxySignInButton`, and `useAuth()` for the signed-in state and sign-out action. `BloomThemeProvider` supplies the SDK UI theme.
+A standalone external application using the published `@oxy.so/services` SDK: one `OxyProvider`, its `OxySignInButton`, and `useAuth()` for the signed-in state and sign-out action. `BloomProvider` supplies the root theme and shared component contexts. It keeps the existing font-loading behavior.
 
 ## Configure and run
 

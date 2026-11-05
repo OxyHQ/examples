@@ -1,7 +1,8 @@
 # Sign in with Oxy — Expo starter
 
 This Expo 56 starter uses one `OxyProvider` from `@oxy.so/services`, the shared
-`OxySignInButton` and `useAuth`. Bloom provides the theme. Native OAuth completion
+`OxySignInButton` and `useAuth`. `BloomProvider` supplies the root theme and shared
+component contexts, preserving the existing font-loading behavior. Native OAuth completion
 is handled by the SDK (`nativeOAuthCompletion="sdk"`); the app does not exchange
 codes, store bearer tokens, or implement a callback handler.
 
@@ -33,6 +34,13 @@ A third-party client opens the explicit OAuth flow, then keeps the resulting
 app session in memory. Process restart requires signing in again. Sign-out is
 awaited, and failure remains visible. There is no silent top-level redirect,
 app-local restore or shared-device credential plumbing.
+
+`OxyProvider` owns the gesture root, safe-area root and native keyboard provider;
+the app does not duplicate those wrappers. The Expo StatusBar remains inside it
+because the pinned Bloom provider does not own status-bar appearance.
+
+The starter has one ordinary ScrollView and no Bloom scroll-restoration owner,
+so it does not install a router adapter or wrap that view in another screen.
 
 ## Checks
 
